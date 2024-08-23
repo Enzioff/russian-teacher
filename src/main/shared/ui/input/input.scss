@@ -1,0 +1,24 @@
+.input {
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+
+  font-family: $font-second;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: $grayDark;
+
+  border-bottom: 2px solid $grayDark;
+  transition: .2s linear;
+
+  &:focus {
+    border-bottom: 3px solid $blue;
+
+    & ~ span {
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+}

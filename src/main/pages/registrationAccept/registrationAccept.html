@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section pt-68 pb-100">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Регистрация</h2>
+            </div>
+            <div class="columns">
+                <div class="columns__col-7">
+                    <div class="info mb-40">
+                        <div class="info__detail">
+                            <h2 class="title title--block">Ещё один шаг</h2>
+                            <p class="text">
+                                На указанную электронную почту выслано письмо для подтверждения аккаунта.
+                            </p>
+                            <p class="text text--link">
+                                <a href="#">Выслать повторно</a>
+                                <span>Через <i>00:59</i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <form class="form">
+                        <button class="form__button button button--slim">Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

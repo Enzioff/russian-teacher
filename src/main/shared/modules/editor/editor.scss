@@ -1,0 +1,11 @@
+.editor {
+  position: relative;
+  z-index: 1;
+  p {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include text($black, $font-second)
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  background-color: $grayDark;
+  background-image: url("../assets/images/footer-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: center top 15px;
+
+  &__wrapper {
+    display: flex;
+    padding: 60px 0 20px;
+    min-height: 260px;
+    height: 100%;
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 13px;
+    height: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    color: $white;
+  }
+}

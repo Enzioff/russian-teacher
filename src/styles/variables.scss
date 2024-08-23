@@ -1,0 +1,215 @@
+@use "sass:math";
+
+// Шрифты
+$font-main: "Manrope", sans-serif;
+$font-second: "Montserrat", sans-serif;
+
+// Цвета
+$white: #FFFFFF;
+$black: #42413C;
+$gray: #B9D0FF;
+$grayDark: #4B5A73;
+$grayLight: #E1EBFE;
+$blue: #438AFE;
+$green: #5BDA8C;
+$purple: #9C7DF7;
+$red: #EE6B8D;
+$yellow: #FCBD06;
+
+// Размеры
+$mobile: 1199;
+
+// Миксины
+@mixin h1() {
+  font-family: $font-main;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43.71px;
+  text-align: left;
+  color: $black;
+
+  @include r($mobile) {
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+}
+
+@mixin h2() {
+  font-family: $font-main;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.78px;
+  text-align: left;
+  color: $grayDark;
+
+  @include r($mobile) {
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+}
+
+@mixin h3() {
+  font-family: $font-second;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: $grayDark;
+
+  @include r($mobile) {
+    font-size: 14px;
+  }
+}
+
+@mixin text($color, $font) {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color;
+
+  @include r($mobile) {
+    font-size: 12px;
+  }
+}
+
+@mixin text-bold($color, $font) {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $color;
+}
+
+@mixin shadow() {
+  box-shadow: 0p 2px 4px 0 #00000026;
+}
+
+@mixin shadow-big() {
+  box-shadow: 0 5px 10px 0 #0000001A;
+}
+
+@mixin shadow-color() {
+  box-shadow: 0 20px 40px 0 #B0D5FFB2;
+}
+
+@mixin shadow-color-small() {
+  box-shadow: 0 20px 30px 0 #B0D5FF4D;
+}
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin cover() {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin coverFull() {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// Генераторы
+@mixin pt($size) {
+  padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .pt-#{$i} {
+    @include pt($i);
+  }
+}
+
+@mixin ptm($size) {
+  @include r($mobile) {
+    padding-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 200 {
+  .ptm-#{$i} {
+    @include ptm($i);
+  }
+}
+
+@mixin pb($size) {
+  padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .pb-#{$i} {
+    @include pb($i);
+  }
+}
+
+@mixin pbm($size) {
+  @include r($mobile) {
+    padding-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 200 {
+  .pbm-#{$i} {
+    @include pbm($i);
+  }
+}
+
+@mixin mt($size) {
+  margin-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .mt-#{$i} {
+    @include mt($i);
+  }
+}
+
+@mixin mtm($size) {
+  @include r($mobile) {
+    margin-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 200 {
+  .mtm-#{$i} {
+    @include mtm($i);
+  }
+}
+
+@mixin mb($size) {
+  margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .mb-#{$i} {
+    @include mb($i);
+  }
+}
+
+@mixin mbm($size) {
+  @include r($mobile) {
+    margin-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 0 through 200 {
+  .mbm-#{$i} {
+    @include mbm($i);
+  }
+}

@@ -1,0 +1,11 @@
+.icon {
+  display: flex;
+  width: 32px;
+  height: 32px;
+
+  &--arrow {
+    width: 32px;
+    height: 8px;
+    fill: $grayDark;
+  }
+}

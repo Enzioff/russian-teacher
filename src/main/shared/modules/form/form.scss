@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+
+    span {
+      font-family: $font-second;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: $grayDark;
+      transition: .2s linear;
+    }
+
+    &.error {
+      .form__error {
+        margin-bottom: 20px;
+        height: auto;
+      }
+      span {
+        color: $red;
+      }
+      .input {
+        border-color: $red;
+        color: $red;
+      }
+    }
+  }
+
+  &__button {
+    margin: 20px auto 0;
+    min-width: 309px;
+
+    &[disabled] {
+      background-color: $gray;
+      pointer-events: none;
+      border-color: $gray;
+    }
+  }
+
+  &__error {
+    height: 0;
+
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: $red;
+
+    overflow: hidden;
+    transition: .2s linear;
+  }
+}

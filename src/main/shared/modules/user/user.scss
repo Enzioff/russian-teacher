@@ -1,0 +1,86 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 25px;
+
+  @include shadow-color-small();
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid $blue;
+
+    img {
+      display: block;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title,
+  &__post {
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $black;
+  }
+
+  &__post {
+    font-weight: 400;
+    color: $grayDark;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.86px;
+    text-align: left;
+    color: $grayDark;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    fill: $blue;
+  }
+}

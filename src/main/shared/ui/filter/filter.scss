@@ -1,0 +1,31 @@
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 68px;
+  width: max-content;
+  overflow: hidden;
+  border-radius: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 202px;
+    padding: 9px 10px;
+
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: center;
+    color: $grayDark;
+
+    background-color: $grayLight;
+    cursor: pointer;
+
+    &.active {
+      color: $white;
+      background-color: $blue;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 55px 30px 68px;
+  border: 1px solid $gray;
+  border-radius: 25px;
+
+  @include shadow-color-small();
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 606px;
+  }
+}

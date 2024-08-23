@@ -1,0 +1,96 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: left;
+      color: $white;
+      transition: .2s linear;
+    }
+
+    &.active,
+    &:hover {
+      span {
+        color: $green;
+      }
+
+      .nav__icon,
+      .nav__chevrone {
+        fill: $green;
+      }
+    }
+
+    &--menu {
+      position: relative;
+
+      &:hover {
+        .nav__submenu {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    fill: $grayLight;
+    transition: .2s linear;
+  }
+
+  &__chevrone {
+    display: flex;
+    width: 16px;
+    height: 9px;
+    fill: $white;
+    transition: .2s linear;
+  }
+
+  &__submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    width: max-content;
+    min-width: 160px;
+    padding: 30px 18px;
+    background-color: $white;
+    border-radius: 25px;
+    border: 1px solid $grayLight;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    transition-delay: .2s;
+    z-index: 2;
+
+    @include shadow-color-small();
+  }
+
+  &__inner-link {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: center;
+    color: $grayDark;
+    transition: .2s linear;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

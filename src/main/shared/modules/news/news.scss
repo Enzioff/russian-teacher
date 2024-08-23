@@ -1,0 +1,38 @@
+.news {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__release {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $grayDark;
+  }
+
+  &__badge {
+    position: relative;
+    top: initial;
+    right: initial;
+    bottom: initial;
+    margin-left: auto;
+  }
+}

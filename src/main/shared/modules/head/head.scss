@@ -1,0 +1,17 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 60px;
+
+  &--col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &--offset {
+    padding-left: 68px;
+    margin-bottom: 20px;
+  }
+}

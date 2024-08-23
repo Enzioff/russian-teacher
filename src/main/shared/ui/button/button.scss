@@ -1,0 +1,63 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 7px 23px 7px 24px;
+  width: max-content;
+  min-width: 309px;
+
+  font-family: $font-main;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.86px;
+  text-align: center;
+  color: $grayDark;
+
+  border: 2px solid $blue;
+  border-radius: 50px;
+
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    color: $white;
+    background: $blue;
+
+    svg {
+      fill: $white;
+    }
+  }
+  &:active {
+    background: #285DB4;
+    border-color: #285DB4;
+  }
+
+  &--slim {
+    min-width: 169px;
+    color: $white;
+    border: none;
+    background: $blue;
+
+    &:hover {
+      background: $blue linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #285DB4;
+    }
+  }
+
+  &--login {
+    border: none;
+    background: linear-gradient(0deg, rgba(206, 227, 255, 0.42) 0%, rgba(206, 227, 255, 0.6) 67%);
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(206, 227, 255, 0.7) 0%, #CEE3FF 67%);
+      color: $grayDark;
+    }
+    &:active {
+      background: linear-gradient(0deg, rgba(206, 227, 255, 0.42) 0%, rgba(206, 227, 255, 0.6) 67%);
+      color: $grayDark;
+    }
+  }
+}

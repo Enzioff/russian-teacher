@@ -1,0 +1,8 @@
+.title {
+  @include h1();
+  z-index: 1;
+
+  &--block {
+    @include h2();
+  }
+}

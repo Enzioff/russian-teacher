@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section pt-68 pb-100">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Регистрация</h2>
+            </div>
+            <div class="columns">
+                <div class="columns__col-7">
+                    <div class="info mb-80">
+                        <div class="info__detail">
+                            <h2 class="title title--block">Приветствие</h2>
+                            <p class="text">
+                                Не следует, однако забывать, что рамки и место обучения кадров требуют определения и
+                                уточнения модели развития. Задача организации, в особенности же начало повседневной
+                                работы по формированию позиции играет важную роль в формировании направлений
+                                прогрессивного развития.
+                            </p>
+                        </div>
+                    </div>
+                    <form class="form">
+                        <label class="form__item">
+                            <input type="email" class="input">
+                            <span>Электронная почта</span>
+                            <span class="form__error">Неправильный формат электронной почты</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Фамилия</span>
+                            <span class="form__error">Пожалуйста, введите фамилию</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Имя</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Отчество</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>Пароль</span>
+                            <span class="form__error">Пожалуйста, введите пароль</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>Повторите пароль</span>
+                            <span class="form__error">Пароль не совпадает</span>
+                        </label>
+                        <button class="form__button button button--slim">Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

@@ -1,0 +1,12 @@
+import './icon-bird.svg';
+import './icon-doc.svg';
+import './icon-house.svg';
+import './icon-page.svg';
+import './icon-arrow-right.svg';
+import './icon-tel.svg';
+import './icon-mail.svg';
+import './icon-pin.svg';
+import './icon-arrow-back.svg';
+import './icon-eye.svg';
+import './icon-eye-close.svg';
+import './icon-chevrone.svg';
