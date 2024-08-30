@@ -3,6 +3,22 @@
   flex-direction: column;
   gap: 60px;
 
+  &--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+
+    .form__item {
+      grid-column: span 1;
+    }
+    .article-doc {
+      grid-column: span 2;
+    }
+    .button {
+      grid-column: span 2;
+    }
+  }
+
   &__item {
     display: flex;
     flex-direction: column-reverse;
@@ -15,6 +31,22 @@
       text-align: left;
       color: $grayDark;
       transition: .2s linear;
+
+      a {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+
+    small {
+      margin-top: 10px;
+      font-family: $font-second;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: $grayDark;
     }
 
     &.error {
@@ -28,6 +60,30 @@
       .input {
         border-color: $red;
         color: $red;
+      }
+    }
+
+    &--block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+      min-height: 80px;
+      padding: 28px 60px;
+      border: 1px solid $grayLight;
+      border-radius: 25px;
+      cursor: pointer;
+
+      @include shadow-color-small();
+
+      span {
+        font-family: $font-second;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: $black;
       }
     }
   }
@@ -55,5 +111,45 @@
 
     overflow: hidden;
     transition: .2s linear;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    margin-top: 20px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    min-height: 120px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: $red;
+    background-color: $white;
+    border-radius: 25px;
+    border: 1px solid $grayLight;
+    cursor: pointer;
+
+    @include shadow-color-small();
+  }
+
+  &__description {
+    grid-column: span 2;
+    margin-bottom: -40px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: $grayDark;
   }
 }

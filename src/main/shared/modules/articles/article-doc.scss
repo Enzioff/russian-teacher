@@ -12,6 +12,8 @@
   &__info {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 120px;
     background-color: $white;
     border: 1px solid $grayLight;
     border-radius: 25px;
@@ -21,6 +23,7 @@
   &__header {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     gap: 40px;
     padding: 20px 63px 10px 20px;
     border-bottom: 1px solid $grayLight;
@@ -31,6 +34,7 @@
   }
 
   &__title {
+    align-self: flex-start;
     font-family: $font-second;
     font-size: 14px;
     font-weight: 500;

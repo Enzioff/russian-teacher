@@ -1,0 +1,54 @@
+.chat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &--message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $purple;
+    border-radius: 50%;
+
+    .chat__icon {
+      fill: $white;
+    }
+  }
+
+  &--close {
+    .chat__icon {
+      fill: $gray;
+    }
+  }
+
+  .chat__note {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 17px;
+    min-height: 17px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: $white;
+    background-color: $green;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: $purple;
+  }
+}

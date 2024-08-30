@@ -14,4 +14,16 @@
     gap: 22px;
     max-width: 606px;
   }
+
+  &--accept {
+    .title {
+      color: $green;
+    }
+  }
+
+  &--deny {
+    .title {
+      color: $red;
+    }
+  }
 }

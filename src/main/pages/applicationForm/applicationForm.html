@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section pt-68 pb-100">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Документы > Анкета соискателя</h2>
+            </div>
+            <div class="columns">
+                <div class="columns__col-9">
+                    <div class="docs mb-80">
+                        <div class="article-doc">
+                            <picture class="article-doc__picture">
+                                <img src="./assets/images/icon-pdf.svg" alt="">
+                            </picture>
+                            <div class="article-doc__info">
+                                <div class="article-doc__header">
+                                    <h3 class="article-doc__title">
+                                        Задача организации, в особенности же начало повседневной
+                                        работы по формированию позиции играет важную роль
+                                    </h3>
+                                    <div class="article-doc__download">
+                                        <p class="article-doc__size">0.3 Мб</p>
+                                        <button class="button button--slim">Скачать</button>
+                                    </div>
+                                </div>
+                                <div class="article-doc__footer">
+                                    <p class="article-doc__text">
+                                        Равным образом реализация намеченных плановых заданий
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-doc">
+                            <picture class="article-doc__picture">
+                                <img src="./assets/images/icon-upload.svg" alt="">
+                            </picture>
+                            <div class="article-doc__info">
+                                <div class="article-doc__header">
+                                    <h3 class="article-doc__title">
+                                        Загрузите фото или скан скачанной и заполненной анкеты в бумажном виде.
+                                    </h3>
+                                    <div class="article-doc__download">
+                                        <p class="article-doc__size">2 Мб макс.</p>
+                                        <label class="button button--purple button--slim">
+                                            <span>Выбрать файл</span>
+                                            <input type="file" hidden accept=".png, .jpg, .jpeg">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="article-doc__footer">
+                                    <p class="article-doc__text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__col-7">
+                    <div class="head head--offset">
+                        <h2 class="title title--block mb-50">Заполнить анкету онлайн</h2>
+                    </div>
+                    <form class="form">
+                        <label class="form__item">
+                            <input type="email" class="input">
+                            <span>ФИО</span>
+                            <span class="form__error">Неправильный формат электронной почты</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="date" class="input">
+                            <span>Дата рождения</span>
+                            <span class="form__error">Пожалуйста, введите фамилию</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Регион, город проживания</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Гражданство</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="tel" class="input">
+                            <span>Номер телефона</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Откуда Вы узнали о проекте?</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <small>для стран дальнего зарубежья обязательно знание языка страны, а также английского языка</small>
+                            <span class="select" data-select>
+                                <span class="select__header">
+                                    <span class="select__current">Выберите страну</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Russia">Россия</span>
+                                    <span class="select__item" data-value="Ukraine">Украина</span>
+                                    <span class="select__item" data-value="Tadjikistan">Таджикистан</span>
+                                    <span class="select__item" data-value="Kazakhstan">Казахстан</span>
+                                    <span class="select__item" data-value="Belarus">Беларусь</span>
+                                    <span class="select__item" data-value="Dagestan">Дагестан</span>
+                                </span>
+                            </span>
+                            <span>Предпочтительная страна работы</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="select" data-select>
+                                <span class="select__header">
+                                    <span class="select__current">Выберите выберите направление</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Math">Математика</span>
+                                    <span class="select__item" data-value="Russian">Русский язык</span>
+                                    <span class="select__item" data-value="Geography">География</span>
+                                    <span class="select__item" data-value="Chemistry">Химия</span>
+                                    <span class="select__item" data-value="Physics">Физика</span>
+                                    <span class="select__item" data-value="Foreign_language">Иностранный язык</span>
+                                </span>
+                            </span>
+                            <span>Предпочтительное направление</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <small>пожалуйста, укажите язык и уровень владения. Например: английский язык C1, испанский
+                                язык B2 и т.д.</small>
+                            <textarea class="input input--area"></textarea>
+                            <span>Знание иностранных языков</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item form__item--block">
+                            <input type="checkbox" class="checkbox">
+                            <span>
+                                Ознакомлен(а) с <a href="#">требованиями</a> к учителям-участникам гуманитарного проекта «Российский
+                                учитель за рубежом»
+                            </span>
+                        </label>
+                        <label class="form__item form__item--block">
+                            <input type="checkbox" class="checkbox">
+                            <span>
+                                Ознакомлен(а). <a href="#" download>Скачать шаблон резюме для заполнения</a>
+                            </span>
+                        </label>
+                        <div class="article-doc">
+                            <div class="article-doc__info">
+                                <div class="article-doc__header">
+                                    <h3 class="article-doc__title">
+                                        Ваше заполненное резюме по форме
+                                    </h3>
+                                    <div class="article-doc__download">
+                                        <p class="article-doc__size">2 Мб макс.</p>
+                                        <label class="button button--purple button--slim">
+                                            <span>Загрузить</span>
+                                            <input type="file" hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="article-doc__footer">
+                                    <p class="article-doc__text">
+                                        Пожалуйста, назовите Ваш Файл в следующем порядке:<br>
+                                        Резюме. ФИО. Предмет.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="form__item form__item--block">
+                            <input type="checkbox" class="checkbox">
+                            <span>
+                                Подтверждаю своё согласие с <a href="#">Политикой обработки персональных данных</a>
+                            </span>
+                        </label>
+                        <button class="form__button button button--slim">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

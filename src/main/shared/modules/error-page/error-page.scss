@@ -1,0 +1,22 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__status {
+    margin-bottom: 20px;
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.78px;
+    text-align: center;
+    color: #6795CA;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+
+    @include h3();
+  }
+}

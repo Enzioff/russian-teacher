@@ -1,0 +1,31 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid $grayDark;
+  transition: .2s linear;
+
+  &::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: $blue;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+  }
+
+  &:checked {
+    border-color: $blue;
+
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

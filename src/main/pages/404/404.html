@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section pt-60 pb-84">
+        <div class="container">
+            <div class="error-page">
+                <picture class="error-page__picture">
+                    <img src="./assets/images/icon-404.svg" alt="">
+                </picture>
+                <h1 class="error-page__title title">Страница не найдена</h1>
+                <p class="error-page__status">Ошибка 404</p>
+                <p class="error-page__description">
+                    Страница устарела, была удалена, или не<br>
+                    существует по какой-то другой причине.
+                </p>
+                <a href="#" class="button">
+                    <svg class="icon icon--arrow">
+                        <use xlink:href="./assets/sprite.svg#icon-arrow-back"></use>
+                    </svg>
+                    Вернуться к новостям
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

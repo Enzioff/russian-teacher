@@ -1,0 +1,44 @@
+.lk-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 68px 30px 55px 146px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../assets/images/pattern-bg.png");
+      background-size: 274px 294px;
+      opacity: .3;
+      z-index: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 2px;
+      width: calc(100% - 60px);
+      transform: translateX(-50%);
+      background: $gray;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 68px 146px 80px;
+  }
+}

@@ -1,0 +1,27 @@
+.lk-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+
+  &__item {
+
+    &.active {
+      .lk-list__link {
+        background-color: #B9D0FF;
+      }
+    }
+  }
+
+  &__link {
+    padding: 2px 6px 5px;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: center;
+    color: $grayDark;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

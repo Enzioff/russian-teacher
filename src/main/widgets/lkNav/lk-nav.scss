@@ -1,0 +1,56 @@
+.lk-nav {
+  display: flex;
+  padding-top: 78px;
+  padding-bottom: 78px;
+  background-color: $white;
+  box-shadow: 20px 0 30px 0 #B0D5FF4D;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    &--inner {
+      gap: 28px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 39px;
+
+    &.active {
+      span {
+        font-weight: 800;
+        color: $blue;
+      }
+      .lk-nav__icon {
+        fill: $blue;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: left;
+      color: $grayDark;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    fill: $grayDark;
+  }
+}

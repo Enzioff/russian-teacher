@@ -1,0 +1,26 @@
+.lk-user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    border: 1px solid $green;
+
+    img {
+      display: block;
+      width: 194px;
+      height: 194px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+    }
+  }
+}

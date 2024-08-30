@@ -18,6 +18,7 @@
   border-radius: 50px;
 
   cursor: pointer;
+  z-index: 1;
   transition: .2s linear;
 
   &:hover {
@@ -58,6 +59,43 @@
     &:active {
       background: linear-gradient(0deg, rgba(206, 227, 255, 0.42) 0%, rgba(206, 227, 255, 0.6) 67%);
       color: $grayDark;
+    }
+  }
+
+  &--purple {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+
+    &:hover {
+      background: $purple linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #6043B7;
+    }
+  }
+
+  &--red {
+    background-color: $red;
+    border-color: $red;
+
+    &:hover {
+      background: $red linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #D94068;
+    }
+  }
+
+  &--green {
+    background-color: $green;
+    border-color: $green;
+
+    &:hover {
+      background: $green linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #37B267;
     }
   }
 }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Российский Учитель</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__info">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <nav class="nav">
+                    <a href="#" class="nav__link active">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-house"></use>
+                        </svg>
+                        <span>Главная</span>
+                    </a>
+                    <div class="nav__link nav__link--menu">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-bird"></use>
+                        </svg>
+                        <span>О нас</span>
+                        <svg class="nav__chevrone">
+                            <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                        </svg>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__inner-link">
+                                Контакты
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Как добраться?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__link nav__link--menu">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <span>Документы</span>
+                        <svg class="nav__chevrone">
+                            <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                        </svg>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__inner-link">
+                                Образцы
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Инструкции
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Анкета
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav__link">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-page"></use>
+                        </svg>
+                        <span>Новости</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="header__login">
+                <div class="login-block">
+                    <form action="#" class="login-block__form login-form">
+                        <label class="login-form__item">
+                            <input type="text" class="input input--small">
+                            <span>Электронная почта</span>
+                        </label>
+                        <label class="login-form__item">
+                            <span class="password-block password-block--light">
+                                <input type="password" class="input input--small">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>Пароль</span>
+                        </label>
+                    </form>
+                    <div class="login-block__login">
+                        <button class="button button--slim button--login">Вход</button>
+                        <a href="#" class="text text--light">Не помню пароль</a>
+                    </div>
+                    <a href="#" class="login-block__register">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <div class="lk-nav">
+    <ul class="lk-nav__list">
+        <li class="lk-nav__item active">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-person"></use>
+                </svg>
+                <span>Персональные данные</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-hat"></use>
+                </svg>
+                <span>Педагогическая деятельность</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-doc-2"></use>
+                </svg>
+                <span>Мои документы</span>
+            </a>
+            <ul class="lk-nav__list lk-nav__list--inner">
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-report"></use>
+                        </svg>
+                        <span>Отчёты</span>
+                    </a>
+                </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-note"></use>
+                        </svg>
+                        <span>Служебные записки</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-vebinar"></use>
+                </svg>
+                <span>Вебинары</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-course"></use>
+                </svg>
+                <span>Курсы</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-gift"></use>
+                </svg>
+                <span>Конкурсы</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-chat-2"></use>
+                </svg>
+                <span>Обратная связь</span>
+            </a>
+        </li>
+    </ul>
+</div>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Мои документы &gt; Отчёты</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--purple" download>Скачать бланк</a>
+                            <a href="#" class="button button--slim">Создать отчёт</a>
+                        </div>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Ежемесячный</a>
+                        </li>
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Полугодовой</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Годовой</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Табель учёта рабочего времени</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Карта эффективности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <div class="head head--lk">
+                        <h2 class="title title--block">Мои отчёты</h2>
+                    </div>
+                    <table class="table">
+                        <thead class="table__header">
+                        <tr class="table__line">
+                            <th class="table__item table__item--head">ID</th>
+                            <th class="table__item table__item--head">Период</th>
+                            <th class="table__item table__item--head">Дата создания</th>
+                            <th class="table__item table__item--head">Статус</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table__body">
+                        <tr class="table__line">
+                            <td class="table__item">0007</td>
+                            <td class="table__item">I полугодие 2024</td>
+                            <td class="table__item">03.06.2024</td>
+                            <td class="table__item table__item--wait">Рассматривается</td>
+                        </tr>
+                        <tr class="table__line">
+                            <td class="table__item">0006</td>
+                            <td class="table__item">II полугодие 2023</td>
+                            <td class="table__item">01.06.2023</td>
+                            <td class="table__item table__item--rejected">Отклонён</td>
+                        </tr>
+                        <tr class="table__line">
+                            <td class="table__item">0005</td>
+                            <td class="table__item">I полугодие 2023</td>
+                            <td class="table__item">01.05.2023</td>
+                            <td class="table__item table__item--approved">Принят</td>
+                        </tr>
+                        <tr class="table__line">
+                            <td class="table__item">0004</td>
+                            <td class="table__item">II полугодие 2022</td>
+                            <td class="table__item">01.07.2022</td>
+                            <td class="table__item table__item--approved">Принят</td>
+                        </tr>
+                        <tr class="table__line">
+                            <td class="table__item">0003</td>
+                            <td class="table__item">I полугодие 2022</td>
+                            <td class="table__item">01.03.2022</td>
+                            <td class="table__item table__item--approved">Принят</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="columns">
+                <div class="columns__col-2">
+                    <div class="footer__copy">
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <p class="text text--light">2024 Все права защищены</p>
+                    </div>
+                </div>
+                <div class="columns__col-3"></div>
+                <div class="columns__col-3">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Главная</a>
+                        <a href="#" class="footer__link">О нас</a>
+                        <a href="#" class="footer__link">Документы</a>
+                        <a href="#" class="footer__link">Новости</a>
+                    </nav>
+                </div>
+                <div class="columns__col-3">
+                    <ul class="addresses addresses--light">
+                        <li class="addresses__item">
+                            <svg class="icon addresses__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                            </svg>
+                            <span>г. Москва, пр-кт Мира 26, оф. 404</span>
+                        </li>
+                        <li class="addresses__item">
+                            <svg class="icon addresses__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+                            </svg>
+                            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                        </li>
+                        <li class="addresses__item">
+                            <svg class="icon addresses__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+                            </svg>
+                            <a href="tel:+78888888888">+7 (888) 888-88-88</a>
+                        </li>
+                        <li class="addresses__item">
+                            <svg class="icon addresses__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-mail"></use>
+                            </svg>
+                            <a href="mailto:rusteachers@email.ru">rusteachers@email.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .temp {
+        padding: 20px 0;
+        background-color: #FFFFFF;
+    }
+
+    .temp__wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px 40px;
+    }
+    .temp__link {
+        transition: .2s linear;
+    }
+    .temp__link:hover {
+        opacity: .7;
+    }
+</style>
+<div class="temp">
+    <div class="container">
+        <div class="temp__wrapper">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./aboutContacts.html" class="temp__link">О нас - Контакты</a>
+            <a href="./aboutPath.html" class="temp__link">О нас - Как добраться</a>
+            <a href="./docs.html" class="temp__link">Документы</a>
+            <a href="./docsInstructions.html" class="temp__link">Документы - Инструкции</a>
+            <a href="./applicationForm.html" class="temp__link">Документы - Анкета</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./newsDetail.html" class="temp__link">Новости - Детальная</a>
+            <a href="./registration.html" class="temp__link">Регистрация</a>
+            <a href="./registrationAccept.html" class="temp__link">Регистрация - Подтверждение почты</a>
+            <a href="./passwordRecovery.html" class="temp__link">Восстановление пароля</a>
+            <a href="./passwordAccept.html" class="temp__link">Восстановление пароля - Подтверждение</a>
+            <a href="./passwordDeny.html" class="temp__link">Восстановление пароля - Отклонение</a>
+            <a href="./passwordNew.html" class="temp__link">Восстановление пароля - Новый пароль</a>
+            <a href="./lkProfile.html" class="temp__link">Личный кабинет - Профиль</a>
+            <a href="./lkDocs.html" class="temp__link">Личный кабинет - Документы</a>
+            <a href="./lkDocsCreate.html" class="temp__link">Личный кабинет - Документы - Отчёт - Создать</a>
+            <a href="./lkDocsNote.html" class="temp__link">Личный кабинет - Документы - Записка</a>
+            <a href="./lkDocsNoteCreate.html" class="temp__link">Личный кабинет - Документы - Записка - Создать</a>
+            <a href="./lkFeedback.html" class="temp__link">Личный кабинет - Обратная связь</a>
+            <a href="./404.html" class="temp__link">404</a>
+        </div>
+    </div>
+</div>
+<script defer src="bundle.js"></script></body>
+</html>

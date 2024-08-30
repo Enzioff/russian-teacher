@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__body">
+                    <div class="head">
+                        <h1 class="title">Персональные данные</h1>
+                    </div>
+                    <div class="lk-user">
+                        <picture class="lk-user__picture">
+                            <img src="./assets/images/user-2.png" alt="">
+                        </picture>
+                        <label class="button button--purple">
+                            <span>Загрузить фото</span>
+                            <input type="file" hidden accept=".png, .jpg, .jpeg">
+                        </label>
+                    </div>
+                    <form class="form">
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Фамилия</span>
+                            <span class="form__error">Пожалуйста, введите фамилию</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Имя</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Отчество</span>
+                            <span class="form__error">Пожалуйста, введите отчество</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Квалификационная категория</span>
+                            <span class="form__error">Пожалуйста, введите категорию</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input">
+                            <span>Город проживания в России</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="date" class="input">
+                            <span>Дата рождения</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <textarea class="input input--area"></textarea>
+                            <span>О себе</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="email" class="input">
+                            <span>Электронная почта</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>Изменить пароль</span>
+                            <span class="form__error">Пожалуйста, введите пароль</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>Повторите пароль</span>
+                            <span class="form__error">Пароль не совпадает</span>
+                        </label>
+                        <div class="form__control">
+                            <button class="button button--slim button--red">Отменить</button>
+                            <button class="button button--slim button--green">Сохранить</button>
+                        </div>
+                        <a href="#" class="form__block">Выйти из аккаунта</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>
