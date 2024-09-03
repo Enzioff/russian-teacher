@@ -15,6 +15,13 @@
     text-align: left;
     color: $grayDark;
 
+    @include r($mobile) {
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -24,6 +31,11 @@
     width: 16px;
     height: 16px;
     fill: $green;
+
+    @include r($mobile) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &--light {

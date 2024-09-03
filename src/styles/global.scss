@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 360px;
+  min-width: 375px;
   min-height: 100vh;
 
   @include text($black, $font-second);
@@ -17,6 +17,17 @@ body {
 
 .centered {
   margin: 0 auto;
+}
+
+.fixed {
+  overflow: hidden;
+}
+
+.logo {
+  @include r($mobile) {
+    width: 80px;
+    height: 50px;
+  }
 }
 
 .mob-hidden {

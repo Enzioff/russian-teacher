@@ -4,21 +4,29 @@
 <body>
 <%= htmlWebpackPlugin.options.widgets.header %>
 <main class="main">
-    <section class="section pt-60 pb-100">
+    <section class="section pt-60 ptm-30 pb-100 pbm-50">
         <div class="container">
             <div class="head">
                 <h2 class="title">Новости</h2>
-                <a href="#" class="button">
+                <a href="#" class="button button--small">
                     <svg class="icon icon--arrow">
                         <use xlink:href="./assets/sprite.svg#icon-arrow-back"></use>
                     </svg>
-                    Вернуться к новостям
+                    Вернуться
                 </a>
             </div>
             <div class="news">
                 <h3 class="news__title title title--block">Торжественные линейки в школах пройдут 2 сентября</h3>
+                <div class="news__release desktop-hidden">
+                    <p class="text">Опубликовано:</p>
+                    <time class="text" datetime="">24 марта, 15:35</time>
+                    <!-- Опциональный элемент, может быть добавлен, а может нет -->
+                    <div class="news__badge badge badge--purple">
+                        <p class="badge__text">Анонс</p>
+                    </div>
+                </div>
                 <div class="columns">
-                    <div class="columns__col-7">
+                    <div class="columns__col-7 columns__col-mob-4">
                         <div class="slider mb-20" data-slider="thumbs" data-slides="1">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -82,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columns__col-5">
+                    <div class="columns__col-5 columns__col-mob-4">
                         <div class="news__info">
                             <div class="news__header">
                                 <p class="text text--gray">Теги:</p>
@@ -99,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="news__content">
-                                <div class="news__release">
+                                <div class="news__release mob-hidden">
                                     <p class="text">Опубликовано:</p>
                                     <time class="text" datetime="">24 марта, 15:35</time>
                                     <!-- Опциональный элемент, может быть добавлен, а может нет -->

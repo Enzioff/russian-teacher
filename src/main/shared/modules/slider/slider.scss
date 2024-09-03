@@ -1,7 +1,24 @@
 .slider {
+  &[data-slider="default"] {
+    .swiper-slide {
+      @include r($mobile) {
+        width: 290px !important;
+      }
+    }
+    .swiper {
+      @include r($mobile) {
+        overflow: visible;
+      }
+    }
+  }
+
   &--auto {
     .swiper-slide {
       width: auto !important;
+
+      @include r($mobile) {
+
+      }
     }
   }
 

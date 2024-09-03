@@ -10,6 +10,11 @@
     width: 100%;
     padding: 68px 30px 55px 146px;
 
+    @include r($mobile) {
+      gap: 30px;
+      padding: 20px 12px 20px 13px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -40,5 +45,47 @@
     flex-direction: column;
     width: 100%;
     padding: 68px 146px 80px;
+
+    @include r($mobile) {
+      padding: 40px 12px 60px 13px;
+    }
+  }
+
+  &__table {
+    overflow-x: auto;
+  }
+
+  &--bg {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../assets/images/pattern-bg.png");
+      background-size: 274px 294px;
+      opacity: .3;
+      z-index: 0;
+    }
+  }
+
+  &--notations {
+    .lk-content__body {
+      padding-left: 56px;
+
+      @include r($mobile) {
+        padding-left: 13px;
+      }
+
+      .head {
+        padding-left: 90px;
+
+        @include r($mobile) {
+          padding-left: 0;
+        }
+      }
+    }
   }
 }

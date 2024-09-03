@@ -8,6 +8,11 @@
   border-radius: 25px;
   overflow: hidden;
 
+  @include r($mobile) {
+    height: 340px;
+    border-radius: 10px;
+  }
+
   img {
     @include coverFull();
   }
@@ -15,5 +20,10 @@
   &--small {
     width: 201px;
     height: 120px;
+
+    @include r($mobile) {
+      width: 98px;
+      height: 75px;
+    }
   }
 }

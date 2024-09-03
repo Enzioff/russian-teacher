@@ -20,6 +20,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
 
@@ -47,6 +48,13 @@
       line-height: 20px;
       text-align: left;
       color: $grayDark;
+    }
+
+    .button {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
     }
 
     &.error {
@@ -77,6 +85,12 @@
 
       @include shadow-color-small();
 
+      @include r($mobile) {
+        gap: 21px;
+        padding: 20px 20px 20px 13px;
+        min-height: 120px;
+      }
+
       span {
         font-family: $font-second;
         font-size: 14px;
@@ -84,6 +98,10 @@
         line-height: 20px;
         text-align: left;
         color: $black;
+
+        @include r($mobile) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -118,6 +136,11 @@
     align-items: center;
     gap: 63px;
     margin-top: 20px;
+
+    @include r($mobile) {
+      gap: 10px;
+      justify-content: space-between;
+    }
   }
 
   &__block {
@@ -140,6 +163,10 @@
     cursor: pointer;
 
     @include shadow-color-small();
+
+    @include r($mobile) {
+      min-height: 80px;
+    }
   }
 
   &__description {

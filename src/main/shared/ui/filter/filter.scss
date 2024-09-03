@@ -6,6 +6,11 @@
   overflow: hidden;
   border-radius: 20px;
 
+  @include r($mobile) {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -26,6 +31,11 @@
     &.active {
       color: $white;
       background-color: $blue;
+    }
+
+    @include r($mobile) {
+      min-width: auto;
+      flex-grow: 1;
     }
   }
 }

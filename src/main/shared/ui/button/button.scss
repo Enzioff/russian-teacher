@@ -21,6 +21,13 @@
   z-index: 1;
   transition: .2s linear;
 
+  @include r($mobile) {
+    padding: 7px 17px;
+    min-width: 230px;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+
   &:hover {
     color: $white;
     background: $blue;
@@ -45,6 +52,14 @@
     }
     &:active {
       background: #285DB4;
+    }
+  }
+
+  &--small {
+    @include r($mobile) {
+      padding: 0 14px;
+      width: max-content;
+      min-width: auto;
     }
   }
 

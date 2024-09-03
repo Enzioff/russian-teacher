@@ -3,6 +3,7 @@
   grid-auto-flow: dense;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 30px;
+  z-index: 1;
 
   @include r($mobile) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -11,6 +12,9 @@
 
   &--row-offset {
     row-gap: 100px;
+    @include r($mobile) {
+      row-gap: 40px;
+    }
   }
 
   &__col {

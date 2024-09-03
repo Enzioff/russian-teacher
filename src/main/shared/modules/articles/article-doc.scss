@@ -21,16 +21,27 @@
   }
 
   &__header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 20px 63px 10px 20px;
+    padding: 20px 232px 10px 20px;
     border-bottom: 1px solid $grayLight;
+
+    @include r($mobile) {
+      padding: 20px 20px 10px;
+    }
   }
 
   &__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
     padding: 10px 63px 20px 20px;
+
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 20px 20px;
+    }
   }
 
   &__title {
@@ -44,7 +55,6 @@
   }
 
   &__text {
-    max-width: 500px;
     font-family: $font-second;
     font-size: 14px;
     font-weight: 400;
@@ -56,10 +66,25 @@
   &__download {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    margin-bottom: -30px;
     z-index: 1;
+
+    @include r($mobile) {
+      flex-direction: column-reverse;
+    }
+
+    &-block {
+      margin-top: -60px;
+
+      @include r($mobile) {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin-top: 0;
+      }
+    }
   }
 
   &__size {

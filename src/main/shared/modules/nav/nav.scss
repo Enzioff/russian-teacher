@@ -3,6 +3,13 @@
   align-items: center;
   gap: 48px;
 
+  @include r($mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 27px;
+    padding-left: 56px;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -32,6 +39,11 @@
 
     &--menu {
       position: relative;
+
+      @include r($mobile) {
+        row-gap: 23px;
+        flex-wrap: wrap;
+      }
 
       &:hover {
         .nav__submenu {
@@ -78,6 +90,19 @@
     z-index: 2;
 
     @include shadow-color-small();
+
+    @include r($mobile) {
+      position: static;
+      padding: 0 0 0 64px;
+      align-items: flex-start;
+      min-width: 100%;
+      border: none;
+      background-color: transparent;
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      box-shadow: none;
+    }
   }
 
   &__inner-link {
@@ -88,6 +113,10 @@
     text-align: center;
     color: $grayDark;
     transition: .2s linear;
+
+    @include r($mobile) {
+      color: $white;
+    }
 
     &:hover {
       color: $blue;

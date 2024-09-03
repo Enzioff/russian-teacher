@@ -6,6 +6,10 @@
   margin-bottom: 60px;
   z-index: 1;
 
+  @include r($mobile) {
+    margin-bottom: 20px;
+  }
+
   &--col {
     flex-direction: column;
     align-items: flex-start;
@@ -14,15 +18,30 @@
   &--offset {
     padding-left: 68px;
     margin-bottom: 20px;
+
+    @include r($mobile) {
+      padding-left: 20px;
+    }
   }
 
   &--lk {
     margin-bottom: 38px;
+
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
   }
 
   &__control {
     display: flex;
     align-items: center;
     gap: 33px;
+
+    @include r($mobile) {
+      gap: 5px;
+      justify-content: space-between;
+    }
   }
 }

@@ -21,3 +21,5 @@ import './icon-person.svg';
 import './icon-report.svg';
 import './icon-vebinar.svg';
 import './icon-course.svg';
+import './icon-mail-2.svg';
+import './icon-notation.svg';

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Вебинары</h2>
+                    </div>
+                    <a href="#" class="button">Назад</a>
+                </div>
+                <div class="lk-content__body">
+                    <div class="news news--archive">
+                        <div class="news__head">
+                            <h3 class="news__title title title--block">Торжественные линейки в школах<br>пройдут 2 сентября</h3>
+                            <div class="news__link">
+                                <button class="button button--slim button--purple">Открыть ссылку</button>
+                                <small>вебинар завершен</small>
+                            </div>
+                        </div>
+                        <div class="news__release desktop-hidden">
+                            <p class="text">Опубликовано:</p>
+                            <time class="text" datetime="">24 марта, 15:35</time>
+                            <!-- Опциональный элемент, может быть добавлен, а может нет -->
+                            <div class="news__badge badge badge--purple">
+                                <p class="badge__text">Анонс</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="columns__col-6 columns__col-mob-4">
+                                <div class="slider mb-20" data-slider="thumbs" data-slides="1">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture class="picture">
+                                                    <img src="./assets/images/pic-6.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture">
+                                                    <img src="./assets/images/pic-7.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture">
+                                                    <img src="./assets/images/pic-8.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture">
+                                                    <img src="./assets/images/pic-6.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture">
+                                                    <img src="./assets/images/pic-7.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider slider--auto" data-slider="thumb">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture class="picture picture--small">
+                                                    <img src="./assets/images/pic-6.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture picture--small">
+                                                    <img src="./assets/images/pic-7.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture picture--small">
+                                                    <img src="./assets/images/pic-8.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture picture--small">
+                                                    <img src="./assets/images/pic-6.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture class="picture picture--small">
+                                                    <img src="./assets/images/pic-7.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columns__col-6 columns__col-mob-4">
+                                <div class="news__info">
+                                    <div class="news__header">
+                                        <p class="text text--gray">Теги:</p>
+                                        <div class="tags">
+                                            <p class="tags__item">
+                                                школа
+                                            </p>
+                                            <p class="tags__item">
+                                                1 сентября
+                                            </p>
+                                            <p class="tags__item">
+                                                новости
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="news__content">
+                                        <div class="news__release mob-hidden">
+                                            <p class="text">Опубликовано:</p>
+                                            <time class="text" datetime="">24 марта, 15:35</time>
+                                            <!-- Опциональный элемент, может быть добавлен, а может нет -->
+                                            <div class="news__badge badge badge--purple">
+                                                <p class="badge__text">Анонс</p>
+                                            </div>
+                                        </div>
+                                        <div class="editor">
+                                            <p>
+                                                Разнообразный и богатый опыт консультация с широким активом влечет за собой
+                                                процесс внедрения и модернизации системы обучения кадров, соответствует насущным
+                                                потребностям. Равным образом новая модель организационной деятельности требуют
+                                                от нас анализа систем массового участия.
+                                            </p>
+                                            <p>
+                                                Повседневная практика показывает, что новая модель организационной деятельности
+                                                в значительной степени обуславливает создание модели развития.
+                                            </p>
+                                            <p>
+                                                Задача организации, в особенности же рамки и место обучения кадров влечет за
+                                                собой процесс внедрения и модернизации соответствующий условий активизации.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

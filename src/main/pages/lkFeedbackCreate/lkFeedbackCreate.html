@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Обратная связь > Создать</h2>
+                    </div>
+                    <a href="#" class="button">Назад</a>
+                </div>
+                <div class="lk-content__body">
+                    <form class="form">
+                        <label class="form__item">
+                            <input type="email" class="input" placeholder="Введите тему обращения">
+                            <span>Тема</span>
+                            <span class="form__error">Пожалуйста, введите тему</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="select" data-select>
+                                <span class="select__header" data-title="TYPE">
+                                    <span class="select__current">Выберите тип обращения</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Russia">Россия</span>
+                                    <span class="select__item" data-value="Ukraine">Украина</span>
+                                    <span class="select__item" data-value="Tadjikistan">Таджикистан</span>
+                                    <span class="select__item" data-value="Kazakhstan">Казахстан</span>
+                                    <span class="select__item" data-value="Belarus">Беларусь</span>
+                                    <span class="select__item" data-value="Dagestan">Дагестан</span>
+                                </span>
+                            </span>
+                            <span>Тип обращения</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <textarea class="input input--area"></textarea>
+                            <span>Сообщение</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="email" class="input" readonly>
+                            <span>Файл</span>
+                            <label class="button button--purple button--slim">
+                                <span>Загрузить</span>
+                                <input type="file" hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                            </label>
+                            <span class="form__error">Пожалуйста, введите тему</span>
+                        </label>
+                        <button class="form__button button button--slim">Создать обращение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

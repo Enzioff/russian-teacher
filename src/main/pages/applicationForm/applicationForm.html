@@ -4,16 +4,16 @@
 <body>
 <%= htmlWebpackPlugin.options.widgets.header %>
 <main class="main">
-    <section class="section pt-68 pb-100">
+    <section class="section pt-68 ptm-30 pb-100 pbm-50">
         <div class="container">
             <div class="head">
                 <h2 class="title">Документы > Анкета соискателя</h2>
             </div>
             <div class="columns">
-                <div class="columns__col-9">
-                    <div class="docs mb-80">
+                <div class="columns__col-9 columns__col-mob-4">
+                    <div class="docs mb-80 mbm-60">
                         <div class="article-doc">
-                            <picture class="article-doc__picture">
+                            <picture class="article-doc__picture mob-hidden">
                                 <img src="./assets/images/icon-pdf.svg" alt="">
                             </picture>
                             <div class="article-doc__info">
@@ -22,43 +22,56 @@
                                         Задача организации, в особенности же начало повседневной
                                         работы по формированию позиции играет важную роль
                                     </h3>
-                                    <div class="article-doc__download">
-                                        <p class="article-doc__size">0.3 Мб</p>
-                                        <button class="button button--slim">Скачать</button>
-                                    </div>
                                 </div>
                                 <div class="article-doc__footer">
                                     <p class="article-doc__text">
                                         Равным образом реализация намеченных плановых заданий
                                     </p>
+                                    <div class="article-doc__download-block">
+                                        <picture class="article-doc__picture desktop-hidden">
+                                            <img src="./assets/images/icon-pdf.svg" alt="">
+                                        </picture>
+                                        <div class="article-doc__download">
+                                            <p class="article-doc__size">0.3 Мб</p>
+                                            <a href="#" class="button button--slim" download>Скачать</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="article-doc">
-                            <picture class="article-doc__picture">
+                            <picture class="article-doc__picture mob-hidden">
                                 <img src="./assets/images/icon-upload.svg" alt="">
                             </picture>
                             <div class="article-doc__info">
                                 <div class="article-doc__header">
                                     <h3 class="article-doc__title">
-                                        Загрузите фото или скан скачанной и заполненной анкеты в бумажном виде.
+                                        Задача организации, в особенности же начало повседневной
+                                        работы по формированию позиции играет важную роль
                                     </h3>
-                                    <div class="article-doc__download">
-                                        <p class="article-doc__size">2 Мб макс.</p>
-                                        <label class="button button--purple button--slim">
-                                            <span>Выбрать файл</span>
-                                            <input type="file" hidden accept=".png, .jpg, .jpeg">
-                                        </label>
-                                    </div>
                                 </div>
                                 <div class="article-doc__footer">
-                                    <p class="article-doc__text"></p>
+                                    <p class="article-doc__text">
+                                        Равным образом реализация намеченных плановых заданий
+                                    </p>
+                                    <div class="article-doc__download-block">
+                                        <picture class="article-doc__picture desktop-hidden">
+                                            <img src="./assets/images/icon-upload.svg" alt="">
+                                        </picture>
+                                        <div class="article-doc__download">
+                                            <p class="article-doc__size">2 Мб макс.</p>
+                                            <label class="button button--purple button--slim">
+                                                <span>Выбрать файл</span>
+                                                <input type="file" hidden accept=".png, .jpg, .jpeg">
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="columns__col-7">
+                <div class="columns__col-7 columns__col-mob-4">
                     <div class="head head--offset">
                         <h2 class="title title--block mb-50">Заполнить анкету онлайн</h2>
                     </div>
@@ -96,7 +109,7 @@
                         <label class="form__item">
                             <small>для стран дальнего зарубежья обязательно знание языка страны, а также английского языка</small>
                             <span class="select" data-select>
-                                <span class="select__header">
+                                <span class="select__header" data-title="COUNTRY">
                                     <span class="select__current">Выберите страну</span>
                                     <svg class="select__icon">
                                         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
@@ -116,7 +129,7 @@
                         </label>
                         <label class="form__item">
                             <span class="select" data-select>
-                                <span class="select__header">
+                                <span class="select__header" data-title="ACTIVITY">
                                     <span class="select__current">Выберите выберите направление</span>
                                     <svg class="select__icon">
                                         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
@@ -160,19 +173,21 @@
                                     <h3 class="article-doc__title">
                                         Ваше заполненное резюме по форме
                                     </h3>
-                                    <div class="article-doc__download">
-                                        <p class="article-doc__size">2 Мб макс.</p>
-                                        <label class="button button--purple button--slim">
-                                            <span>Загрузить</span>
-                                            <input type="file" hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-                                        </label>
-                                    </div>
                                 </div>
                                 <div class="article-doc__footer">
                                     <p class="article-doc__text">
                                         Пожалуйста, назовите Ваш Файл в следующем порядке:<br>
                                         Резюме. ФИО. Предмет.
                                     </p>
+                                    <div class="article-doc__download-block">
+                                        <div class="article-doc__download">
+                                            <p class="article-doc__size">0.3 Мб</p>
+                                            <label class="button button--purple button--slim">
+                                                <span>Загрузить</span>
+                                                <input type="file" hidden accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

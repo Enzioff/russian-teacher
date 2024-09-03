@@ -6,6 +6,12 @@
   border: 1px solid $gray;
   border-radius: 25px;
 
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
   @include shadow-color-small();
 
   &__detail {
@@ -13,6 +19,17 @@
     flex-direction: column;
     gap: 22px;
     max-width: 606px;
+
+    @include r($mobile) {
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  .addresses {
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 
   &--accept {

@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   background-color: $white;
   border-radius: 25px;
   border: 1px solid $grayLight;
@@ -9,10 +10,15 @@
 
   &__picture {
     display: flex;
+    flex-shrink: 0;
     width: 100%;
     height: 200px;
     overflow: hidden;
     border-radius: 25px 25px 0 0;
+
+    @include r($mobile) {
+      height: 160px;
+    }
 
     img {
       @include coverFull();
@@ -23,19 +29,29 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    height: 100%;
     padding: 36px 30px 25px 20px;
+
+    @include r($mobile) {
+      padding: 29px 19px 17px 20px;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
     gap: 13px;
+
+    @include r($mobile) {
+      gap: 11px;
+    }
   }
 
   &__footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
     gap: 10px;
   }
 
@@ -44,6 +60,10 @@
     align-items: center;
     gap: 12px;
 
+    @include r($mobile) {
+      gap: 7px;
+    }
+
     span {
       font-family: $font-main;
       font-size: 16px;
@@ -51,6 +71,11 @@
       line-height: 21.86px;
       color: $blue;
       transition: .2s linear;
+
+      @include r($mobile) {
+        font-size: 14px;
+        line-height: 19.12px;
+      }
     }
 
     svg {
@@ -94,6 +119,10 @@
       text-align: left;
       color: $grayDark;
 
+      @include r($mobile) {
+        font-size: 12px;
+      }
+
       &:first-child {
         display: flex;
         gap: 8px;
@@ -113,5 +142,29 @@
     top: initial;
     bottom: calc(100% + 2px);
     right: 59px;
+  }
+
+  &--archive {
+    .article-news__picture {
+      background: #B9D0FFB2;
+
+      img {
+        opacity: .3;
+      }
+    }
+
+    .article-news__link {
+      span {
+        color: $gray;
+      }
+
+      .icon {
+        fill: $gray;
+      }
+    }
+
+    .article-news__badge {
+      background-color: $gray;
+    }
   }
 }

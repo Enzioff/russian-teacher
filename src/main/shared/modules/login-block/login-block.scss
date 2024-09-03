@@ -5,6 +5,11 @@
   padding-left: 64px;
   padding-bottom: 12px;
 
+  @include r($mobile) {
+    padding: 0 0 25px 0;
+    border-bottom: 2px solid $white;
+  }
+
   &__register {
     padding: 9px 9px 4px;
     font-family: $font-main;

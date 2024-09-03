@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background: linear-gradient(73.52deg, #111C4A 28.66%, #233B85 76.51%),
   radial-gradient(14.58% 157.78% at 1.7% 19.37%, rgba(103, 149, 202, 0.8) 0%, rgba(103, 149, 202, 0) 100%);
   z-index: 3;
@@ -9,6 +10,10 @@
     display: flex;
     align-items: center;
     min-height: 160px;
+
+    @include r($mobile) {
+      min-height: 70px;
+    }
   }
 
   &__info {
@@ -21,6 +26,11 @@
     background-image: url("../assets/images/header-pattern.svg");
     background-repeat: no-repeat;
     background-position: center bottom -15px;
+
+    @include r($mobile) {
+      padding: 10px 0;
+      background-size: cover;
+    }
   }
 
   &__login {
@@ -31,5 +41,8 @@
     width: 100%;
     max-width: 450px;
     border-left: 2px solid $white;
+    @include r($mobile) {
+      display: none;
+    }
   }
 }

@@ -10,6 +10,11 @@
   border-radius: 15px 15px 0 0;
   background-color: $black;
 
+  @include r($mobile) {
+    min-width: 109px;
+    padding: 2px 14px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -43,5 +48,10 @@
     line-height: 21.86px;
     text-align: left;
     color: $white;
+
+    @include r($mobile) {
+      font-size: 12px;
+      line-height: 16.39px;
+    }
   }
 }

@@ -1,4 +1,9 @@
 .lk {
   display: grid;
   grid-template-columns: 357px 1fr;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }

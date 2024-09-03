@@ -1,0 +1,51 @@
+.burger {
+  position: relative;
+  display: flex;
+  width: 28px;
+  height: 21px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &::before,
+  &::after,
+  &__item {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3px;
+    width: 28px;
+    background-color: $white;
+    border-radius: 30px;
+    transition: .2s linear;
+  }
+
+  &::after {
+    top: 18px;
+  }
+
+  &__item {
+    top: 9px;
+  }
+
+  &.active {
+    .burger__item {
+      top: -4px;
+      opacity: 0;
+    }
+    &::before {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+  }
+
+
+
+  @include rmin($mobile) {
+    display: none;
+  }
+}
