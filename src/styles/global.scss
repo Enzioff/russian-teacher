@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .main {
   flex-grow: 1;
   overflow-x: hidden;
@@ -94,4 +98,9 @@ body {
       }
     }
   }
+}
+
+*[disabled] {
+  pointer-events: none;
+  opacity: .5;
 }

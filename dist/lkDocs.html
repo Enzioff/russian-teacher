@@ -70,42 +70,60 @@
                         <span>Новости</span>
                     </a>
                 </nav>
+                <div class="user-notation desktop-hidden">
+                    <a href="#" class="user-notation__link user-notation__link--notation">
+                        <svg class="user-notation__icon user-notation__icon--mail">
+                            <use xlink:href="./assets/sprite.svg#icon-mail-fill"></use>
+                        </svg>
+                        <span class="user-notation__bubble">1</span>
+                    </a>
+                    <a href="#" class="user-notation__link user-notation__link--notation">
+                        <svg class="user-notation__icon user-notation__icon--notation">
+                            <use xlink:href="./assets/sprite.svg#icon-notation"></use>
+                        </svg>
+                        <span class="user-notation__bubble">2</span>
+                    </a>
+                </div>
                 <div class="burger">
                     <span class="burger__item"></span>
                 </div>
             </div>
-            <div class="header__login">
-                <div class="login-block">
-                    <form action="#" class="login-block__form login-form">
-                        <label class="login-form__item">
-                            <input type="text" class="input input--small">
-                            <span>Электронная почта</span>
-                        </label>
-                        <label class="login-form__item">
-                            <span class="password-block password-block--light">
-                                <input type="password" class="input input--small">
-                                <button class="password-block__btn" type="button">
-                                    <svg>
-                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
-                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
-                                    </svg>
-                                </button>
-                            </span>
-                            <span>Пароль</span>
-                        </label>
-                    </form>
-                    <div class="login-block__login">
-                        <button class="button button--slim button--login">Вход</button>
-                        <a href="#" class="text text--light">Не помню пароль</a>
+            <div class="header__login header__login--login">
+                <div class="user-nav user-nav--lk">
+                    <a href="#" class="user-nav__link">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk"></use>
+                        </svg>
+                        <span class="user-nav__text">Личный кабинет</span>
+                    </a>
+                    <a href="#" class="user-nav__user user-nav__user--admin">
+                        <picture class="user-nav__picture">
+                            <img src="./assets/images/user-2.png" alt="">
+                        </picture>
+                        <span class="user-nav__text">Иван<br>Петров</span>
+                        <p class="user-nav__status">Администратор</p>
+                    </a>
+                    <div class="user-notation">
+                        <a href="#" class="user-notation__link user-notation__link--notation">
+                            <svg class="user-notation__icon user-notation__icon--mail">
+                                <use xlink:href="./assets/sprite.svg#icon-mail-fill"></use>
+                            </svg>
+                            <span class="user-notation__bubble">1</span>
+                        </a>
+                        <a href="#" class="user-notation__link user-notation__link--notation">
+                            <svg class="user-notation__icon user-notation__icon--notation">
+                                <use xlink:href="./assets/sprite.svg#icon-notation"></use>
+                            </svg>
+                            <span class="user-notation__bubble">2</span>
+                        </a>
                     </div>
-                    <a href="#" class="login-block__register">Регистрация</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="mobile-menu">
         <div class="login-block">
-            <form action="#" class="login-block__form login-form">
+            <form action="/personal-cabinet/auth/" class="login-block__form login-form">
                 <label class="login-form__item">
                     <input type="text" class="input input--small">
                     <span>Электронная почта</span>
@@ -119,12 +137,12 @@
                                         <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
                                     </svg>
                                 </button>
+                                <span>Пароль</span>
                             </span>
-                    <span>Пароль</span>
                 </label>
             </form>
             <div class="login-block__login">
-                <button class="button button--slim button--login">Вход</button>
+                <button class="button button--slim button--login" data-login-btn>Вход</button>
                 <a href="#" class="text text--light">Не помню пароль</a>
             </div>
             <a href="#" class="login-block__register">Регистрация</a>
@@ -199,6 +217,22 @@
         <li class="lk-nav__item">
             <a href="#" class="lk-nav__link">
                 <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-people"></use>
+                </svg>
+                <span>Аккаунты</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-hat"></use>
+                </svg>
+                <span>Преподаватели</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
                     <use xlink:href="./assets/sprite.svg#icon-hat"></use>
                 </svg>
                 <span>Педагогическая деятельность</span>
@@ -228,6 +262,14 @@
                         <span>Служебные записки</span>
                     </a>
                 </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-list-plus"></use>
+                        </svg>
+                        <span>Полезные документы</span>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="lk-nav__item">
@@ -236,6 +278,14 @@
                     <use xlink:href="./assets/sprite.svg#icon-vebinar"></use>
                 </svg>
                 <span>Вебинары</span>
+            </a>
+        </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-vebinar"></use>
+                </svg>
+                <span>Рассылка</span>
             </a>
         </li>
         <li class="lk-nav__item">
@@ -262,6 +312,56 @@
                 <span>Обратная связь</span>
             </a>
         </li>
+        <li class="lk-nav__item">
+            <a href="#" class="lk-nav__link">
+                <svg class="lk-nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-cubes"></use>
+                </svg>
+                <span>Сайт</span>
+            </a>
+            <ul class="lk-nav__list lk-nav__list--inner">
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-settings"></use>
+                        </svg>
+                        <span>Главная страница</span>
+                    </a>
+                </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-site"></use>
+                        </svg>
+                        <span>Публикации</span>
+                    </a>
+                </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-note"></use>
+                        </svg>
+                        <span>Анкета</span>
+                    </a>
+                </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-folder"></use>
+                        </svg>
+                        <span>Документы</span>
+                    </a>
+                </li>
+                <li class="lk-nav__item">
+                    <a href="#" class="lk-nav__link">
+                        <svg class="lk-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-list"></use>
+                        </svg>
+                        <span>Контакты</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </div>
             <div class="lk-content">
@@ -269,6 +369,7 @@
                     <div class="head head--lk">
                         <h2 class="title">Мои документы &gt; Отчёты</h2>
                         <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent" download>Скачать шаблон</a>
                             <a href="#" class="button button--slim button--purple" download>Скачать бланк</a>
                             <a href="#" class="button button--slim">Создать отчёт</a>
                         </div>
@@ -398,6 +499,99 @@
     </div>
 </footer>
 
+<div class="hidden">
+    <div class="select-account" id="selectAccount">
+        <form action="#" class="select-account__form">
+            <div class="select-account__header">
+                <div class="select-account__meta">
+                    <h3 class="select-account__title">Добавить преподавателя в список</h3>
+                    <button class="button button--short button--blue">Подтвердить</button>
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Поиск">
+                </div>
+            </div>
+            <div class="select-account__body">
+                <h3 class="select-account__title">Добавить преподавателя в список</h3>
+                <div class="select-account__list">
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="select-account__item">
+                        <input type="checkbox" hidden name="ACCOUNT">
+                        <span class="select-account__info">
+                            <picture class="select-account__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <span>Валентин Карпов</span>
+                            <svg class="select-account__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 <style>
     .temp {
         padding: 20px 0;
@@ -426,6 +620,7 @@
             <a href="./docs.html" class="temp__link">Документы</a>
             <a href="./docsInstructions.html" class="temp__link">Документы - Инструкции</a>
             <a href="./applicationForm.html" class="temp__link">Документы - Анкета</a>
+            <a href="./applicationFormSecond.html" class="temp__link">Документы - Анкета 2</a>
             <a href="./news.html" class="temp__link">Новости</a>
             <a href="./newsDetail.html" class="temp__link">Новости - Детальная</a>
             <a href="./registration.html" class="temp__link">Регистрация</a>
@@ -446,6 +641,24 @@
             <a href="./lkCoursesArchive.html" class="temp__link">Личный кабинет - Курсы - Архив</a>
             <a href="./lkCoursesDetail.html" class="temp__link">Личный кабинет - Курсы - Детальная</a>
             <a href="./lkCoursesDetailArchive.html" class="temp__link">Личный кабинет - Курсы - Детальная - Архив</a>
+            <a href="./lkTeaching.html" class="temp__link">Личный кабинет - Педагогическая деятельность</a>
+            <a href="./lkTeachingNote.html" class="temp__link">Личный кабинет - Педагогическая деятельность - Список</a>
+            <a href="./lkTeachingCreate.html" class="temp__link">Личный кабинет - Педагогическая деятельность - Создать</a>
+            <a href="./lkTeachingUpload.html" class="temp__link">Личный кабинет - Педагогическая деятельность - Загрузить</a>
+            <a href="./lkTeachingList.html" class="temp__link">Личный кабинет - Педагогическая деятельность - Отчёт</a>
+            <a href="./lkAdmin.html" class="temp__link">Личный кабинет - Администратор</a>
+            <a href="./lkAccounts.html" class="temp__link">Личный кабинет - Администратор - Аккаунты</a>
+            <a href="./lkAccountCreate.html" class="temp__link">Личный кабинет - Администратор - Аккаунт - Создание</a>
+            <a href="./lkAccountSettings.html" class="temp__link">Личный кабинет - Администратор - Аккаунт - Изменение</a>
+            <a href="./lkAccountFeedback.html" class="temp__link">Личный кабинет - Администратор - Аккаунт - Обратная связь</a>
+            <a href="./lkAccountNotification.html" class="temp__link">Личный кабинет - Администратор - Аккаунт - Уведомления</a>
+            <a href="./lkTeachers.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Все</a>
+            <a href="./lkTeachersWait.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Ожидание</a>
+            <a href="./lkTeachersCreate.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Создание</a>
+            <a href="./lkTeachersSettings.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Настройки</a>
+            <a href="./lkTeachersList.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Пед.Деятельность</a>
+            <a href="./lkTeachersDocs.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Документы</a>
+            <a href="./lkTeachersNotification.html" class="temp__link">Личный кабинет - Администратор - Преподаватели - Уведомления</a>
             <a href="./404.html" class="temp__link">404</a>
         </div>
     </div>

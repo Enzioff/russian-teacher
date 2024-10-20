@@ -21,4 +21,31 @@
       text-decoration: underline;
     }
   }
+
+  &--gray {
+    color: rgb(66, 65, 60);
+  }
+
+  &__icon {
+    &-mail {
+      width: 37px;
+      position: relative;
+      top: 42px;
+    }
+
+    &-mail img {
+      width: 27px;
+    }
+
+    &-bell {
+      width: 29px;
+      position: relative;
+      top: 41px;
+      left: -20px;
+    }
+
+    &-bell img {
+      width: 25px;
+    }
+  }
 }

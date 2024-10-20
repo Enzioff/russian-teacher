@@ -2,7 +2,7 @@
 <html lang="ru">
 <%= htmlWebpackPlugin.options.widgets.head %>
 <body>
-<%= htmlWebpackPlugin.options.widgets.header %>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
 <main class="main">
     <section class="section">
         <div class="lk">
@@ -12,16 +12,16 @@
                     <div class="head">
                         <h1 class="title">Персональные данные</h1>
                     </div>
-                    <div class="lk-user">
-                        <picture class="lk-user__picture">
-                            <img src="./assets/images/user-2.png" alt="">
-                        </picture>
-                        <label class="button button--purple">
-                            <span>Загрузить фото</span>
-                            <input type="file" hidden accept=".png, .jpg, .jpeg">
-                        </label>
-                    </div>
-                    <form class="form">
+                    <form action="/personal-cabinet/" class="form">
+                        <div class="lk-user" data-user-photo>
+                            <picture class="lk-user__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <label class="button button--purple">
+                                <span>Загрузить фото</span>
+                                <input type="file" hidden accept=".png, .jpg, .jpeg">
+                            </label>
+                        </div>
                         <label class="form__item">
                             <input type="text" class="input">
                             <span>Фамилия</span>
@@ -71,8 +71,8 @@
                                         <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
                                     </svg>
                                 </button>
+                                <span>Изменить пароль</span>
                             </span>
-                            <span>Изменить пароль</span>
                             <span class="form__error">Пожалуйста, введите пароль</span>
                         </label>
                         <label class="form__item">
@@ -84,8 +84,8 @@
                                         <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
                                     </svg>
                                 </button>
+                                <span>Повторите пароль</span>
                             </span>
-                            <span>Повторите пароль</span>
                             <span class="form__error">Пароль не совпадает</span>
                         </label>
                         <div class="form__control">

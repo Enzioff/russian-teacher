@@ -11,11 +11,51 @@
     .form__item {
       grid-column: span 1;
     }
+
     .article-doc {
       grid-column: span 2;
     }
+
     .button {
       grid-column: span 2;
+    }
+
+    &-desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px 30px;
+
+      @include r($mobile) {
+        grid-template-columns: 1fr;
+      }
+
+      .form__item {
+        grid-column: span 1;
+      }
+
+      .article-doc {
+        grid-column: span 2;
+        @include r($mobile) {
+          grid-column: span 1;
+        }
+      }
+
+      .button {
+        grid-column: span 2;
+        @include r($mobile) {
+          grid-column: span 1;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &--offset {
+      gap: 40px;
     }
   }
 
@@ -36,6 +76,17 @@
       a {
         color: $blue;
         text-decoration: underline;
+      }
+
+      &.form__status {
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        font-family: $font-second;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
       }
     }
 
@@ -62,9 +113,11 @@
         margin-bottom: 20px;
         height: auto;
       }
+
       span {
         color: $red;
       }
+
       .input {
         border-color: $red;
         color: $red;
@@ -104,6 +157,39 @@
         }
       }
     }
+
+    &-title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      &-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    &--row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      cursor: pointer;
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+    }
   }
 
   &__button {
@@ -114,6 +200,15 @@
       background-color: $gray;
       pointer-events: none;
       border-color: $gray;
+    }
+
+    &--left {
+      margin-left: 0;
+      min-width: 169px;
+
+      @include r($mobile) {
+        margin-left: auto;
+      }
     }
   }
 
@@ -177,6 +272,16 @@
     font-weight: 600;
     line-height: 20px;
     text-align: left;
+    color: $grayDark;
+  }
+
+  &__title {
+    order: 1;
+    margin-bottom: 20px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
     color: $grayDark;
   }
 }

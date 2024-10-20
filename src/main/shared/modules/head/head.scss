@@ -34,6 +34,16 @@
     }
   }
 
+  &--lk-column {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 38px;
+
+    @include r($mobile) {
+      margin-bottom: 0;
+    }
+  }
+
   &__control {
     display: flex;
     align-items: center;

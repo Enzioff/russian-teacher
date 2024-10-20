@@ -2,7 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 0;
+
+  &.active {
+    z-index: 2;
+  }
 
   &__header {
     display: flex;
@@ -60,6 +64,18 @@
     color: $grayDark;
 
     cursor: pointer;
+
+    &--wait {
+      color: $blue;
+    }
+
+    &--rejected {
+      color: $red;
+    }
+
+    &--approved {
+      color: $green;
+    }
   }
 
   &.active {
@@ -72,6 +88,31 @@
 
     .select__icon {
       transform: rotate(180deg);
+    }
+  }
+
+  &--small {
+    min-width: 86px;
+  }
+
+  &--middle {
+    min-width: 202px;
+    width: max-content;
+  }
+
+  &--auto {
+    min-width: auto;
+    width: fit-content;
+
+    span.select__content {
+      width: max-content;
+    }
+  }
+
+  &--center {
+    span.select__current {
+      flex-grow: 1;
+      text-align: center;
     }
   }
 }

@@ -37,6 +37,10 @@
       width: calc(100% - 60px);
       transform: translateX(-50%);
       background: $gray;
+
+      @include r($mobile) {
+        width: calc(100% - 26px);
+      }
     }
   }
 
@@ -44,7 +48,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 68px 146px 80px;
+    padding: 68px 30px 80px 146px;
 
     @include r($mobile) {
       padding: 40px 12px 60px 13px;
@@ -53,10 +57,19 @@
 
   &__table {
     overflow-x: auto;
+    min-height: 100vh;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
   }
 
   &--bg {
     position: relative;
+
     &::before {
       content: '';
       position: absolute;
@@ -84,6 +97,57 @@
 
         @include r($mobile) {
           padding-left: 0;
+        }
+      }
+    }
+  }
+
+  &__outer {
+    margin-left: -115px;
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+    gap: 60px 30px;
+    z-index: 3;
+
+    &-left {
+      display: flex;
+      width: 100%;
+
+      .form__item {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        span {
+          display: block;
+          flex: 0 1;
+          flex-basis: auto;
+          gap: 0;
+          padding: 2px 5px 6px;
+          height: 27px;
+          font-family: $font-main;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 21.86px;
+          text-align: center;
+          border-radius: 6px;
+          color: $grayDark;
+          cursor: pointer;
+          z-index: 3;
+        }
+
+        input:checked + span {
+          background: $gray;
+        }
+
+        input:disabled + span {
+          color: #b9d0ff;
+          cursor: default;
         }
       }
     }

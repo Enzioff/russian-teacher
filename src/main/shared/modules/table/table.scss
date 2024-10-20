@@ -1,5 +1,6 @@
 .table {
   min-width: 898px;
+  width: 100%;
 
   &--big {
     .table__line {
@@ -137,6 +138,116 @@
 
     &--confirm {
       color: $gray;
+    }
+
+    &--row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      picture {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      display: flex;
+      width: 39px;
+      height: 39px;
+      fill: $blue;
+    }
+
+    span {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      font-family: $font-second;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: center;
+      color: $blue;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    &--strong {
+      font-weight: 600;
+    }
+  }
+
+  &--center {
+    .table__item {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &--between {
+    .table__item {
+      width: auto;
+    }
+  }
+
+  &--control {
+    th:last-child {
+      text-align: right;
+    }
+    .table__item {
+      vertical-align: middle;
+      &:nth-child(1) {
+        width: 8%;
+      }
+      &:nth-child(2) {
+        width: 10%;
+      }
+      &:nth-child(3) {
+        width: auto;
+      }
+      &:nth-child(4) {
+        width: auto;
+      }
+      &:last-child {
+        width: 14%;
+        & > * {
+          text-align: right;
+          padding-right: 32px;
+        }
+      }
+    }
+  }
+
+  &__visible {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: scroll;
+
+  .table {
+    width: unset;
+
+    &__item {
+      min-width: 100px;
+
+      &--rightborder {
+        border-right: 1px solid $gray;
+
+        & + .table__item {
+          padding-left:10px;
+        }
+      }
     }
   }
 }

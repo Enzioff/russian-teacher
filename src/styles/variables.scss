@@ -11,10 +11,12 @@ $gray: #B9D0FF;
 $grayDark: #4B5A73;
 $grayLight: #E1EBFE;
 $blue: #438AFE;
+$blueLight: #6795CA;
 $green: #5BDA8C;
 $purple: #9C7DF7;
 $red: #EE6B8D;
 $yellow: #FCBD06;
+$yellowSecond: #FFC107;
 
 // Размеры
 $mobile: 1199;
@@ -38,13 +40,13 @@ $mobile: 1199;
   font-family: $font-main;
   font-size: 24px;
   font-weight: 700;
-  line-height: 32.78px;
+  line-height: 33px;
   text-align: left;
   color: $grayDark;
 
   @include r($mobile) {
     font-size: 16px;
-    line-height: 21.86px;
+    line-height: 22px;
   }
 }
 

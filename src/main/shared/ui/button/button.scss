@@ -41,11 +41,57 @@
     border-color: #285DB4;
   }
 
+  &--short {
+    min-width: auto;
+    padding: 0 38px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $white;
+    border: none;
+    background-color: $purple;
+
+    &:hover {
+      background: $purple linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #6043B7;
+    }
+  }
+
   &--slim {
     min-width: 169px;
     color: $white;
     border: none;
     background: $blue;
+
+    &:hover {
+      background: $blue linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #285DB4;
+    }
+  }
+
+  &--blue {
+    color: $white;
+    border: none;
+    background: $blue;
+
+    &:hover {
+      background: $blue linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    &:active {
+      background: #285DB4;
+    }
+  }
+
+  &--transparent {
+    color: $grayDark;
+    background-color: transparent;
+    border: 1px solid $blue;
 
     &:hover {
       background: $blue linear-gradient(180deg, rgba(0, 0, 0, 0) 56.67%, rgba(0, 0, 0, 0.2) 100%);

@@ -1,9 +1,10 @@
 import Slider from "./slider";
-import {Fancybox} from "@fancyapps/ui";
 import MobileMenu from "./mobileMenu";
-import password from "./password";
 import Password from "./password";
 import CustomSelect from "./customSelect";
+import HeaderLogin from "./headerLogin";
+import UpdateUserPhoto from "./updateUserPhoto";
+import {Fancybox} from "@fancyapps/ui";
 
 class App {
     constructor() {
@@ -15,6 +16,9 @@ class App {
         this.createMobileMenu()
         this.createPassword()
         this.createCustomSelect()
+        this.createHeaderLogin()
+        this.createUpdateUserPhoto()
+        this.createFancyBox()
     }
 
     createSlider = () => {
@@ -51,6 +55,23 @@ class App {
         selectList.forEach(el => {
             new CustomSelect(el);
         })
+    }
+
+    createHeaderLogin = () => {
+        const loginBtn = document.querySelector('.login-block');
+        if (!loginBtn) return
+
+        new HeaderLogin(loginBtn)
+    }
+
+    createUpdateUserPhoto = () => {
+        const userPhotoBlock = document.querySelector('[data-user-photo]')
+        if (!userPhotoBlock) return
+        new UpdateUserPhoto(userPhotoBlock)
+    }
+
+    createFancyBox = () => {
+        Fancybox.bind('[data-fancybox]')
     }
 }
 

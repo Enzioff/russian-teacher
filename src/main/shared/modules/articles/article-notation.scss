@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   gap: 25px;
+  padding-left: 90px;
   z-index: 1;
 
   &.active {
@@ -31,6 +32,15 @@
       gap: 10px;
       padding: 24px 15px 20px 13px;
     }
+
+    .title--block {
+      font-family: $font-second;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+      color: #6795CA;
+    }
   }
 
   &__title {
@@ -39,6 +49,7 @@
 
   &__picture {
     padding-top: 25px;
+    margin-left: -90px;
 
     @include r($mobile) {
       padding-top: 10px;

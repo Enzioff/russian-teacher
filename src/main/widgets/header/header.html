@@ -62,7 +62,7 @@
             </div>
             <div class="header__login">
                 <div class="login-block">
-                    <form action="#" class="login-block__form login-form">
+                    <form action="/personal-cabinet/auth/" class="login-block__form login-form">
                         <label class="login-form__item">
                             <input type="text" class="input input--small">
                             <span>Электронная почта</span>
@@ -76,12 +76,12 @@
                                         <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
                                     </svg>
                                 </button>
+                                <span>Пароль</span>
                             </span>
-                            <span>Пароль</span>
                         </label>
                     </form>
                     <div class="login-block__login">
-                        <button class="button button--slim button--login">Вход</button>
+                        <button class="button button--slim button--login" data-login-btn>Вход</button>
                         <a href="#" class="text text--light">Не помню пароль</a>
                     </div>
                     <a href="#" class="login-block__register">Регистрация</a>

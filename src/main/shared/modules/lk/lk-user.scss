@@ -9,6 +9,24 @@
     gap: 20px;
   }
 
+  &--admin {
+    .lk-user__picture {
+      border-color: $yellow;
+    }
+  }
+
+  &--moder {
+    .lk-user__picture {
+      border-color: $red;
+    }
+  }
+
+  &--psycho {
+    .lk-user__picture {
+      border-color: $purple;
+    }
+  }
+
   &__picture {
     display: flex;
     align-items: center;
@@ -17,7 +35,7 @@
     width: 202px;
     height: 202px;
     border-radius: 50%;
-    border: 1px solid $green;
+    border: 2px solid $green;
 
     @include r($mobile) {
       width: 110px;
@@ -35,6 +53,16 @@
       @include r($mobile) {
         width: 99px;
         height: 99px;
+      }
+    }
+
+    .lk-user__photo-header {
+      width: 68px;
+      height: 68px;
+
+      img {
+        width: 64px;
+        height: 64px;
       }
     }
   }

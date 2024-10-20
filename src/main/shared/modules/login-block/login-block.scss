@@ -1,9 +1,10 @@
 .login-block {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 47px;
   padding-left: 64px;
   padding-bottom: 12px;
+  height: 100%;
 
   @include r($mobile) {
     padding: 0 0 25px 0;
@@ -11,7 +12,8 @@
   }
 
   &__register {
-    padding: 9px 9px 4px;
+    align-self: center;
+    padding: 18px 9px 4px;
     font-family: $font-main;
     font-size: 16px;
     font-weight: 600;
@@ -52,5 +54,62 @@
     .text {
       padding-right: 30px;
     }
+  }
+
+  &__cabinet-link {
+    position: relative;
+    top: 25px;
+    height: 40px;
+    padding: 9px 9px 4px;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    text-wrap: nowrap;
+    color: $white;
+    border: none;
+
+    img {
+      position: relative;
+      top: 7px;
+      height: 32px;
+    }
+
+    svg {
+      position: relative;
+      top: 7px;
+      height: 32px;
+    }
+  }
+
+  &__user-photo-container {
+    width: 68px;
+    height: 100%;
+
+    a {
+      top: 5px;
+      line-height: 5px;
+    }
+  }
+
+  .text--light sup {
+    position: absolute;
+    right: 0;
+    top: -9px;
+    display: block;
+    height: 19px;
+    width: 19px;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    background: $yellow;
+    border-radius: 50%;
+    z-index: 100;
+  }
+
+  .text--light.text--icon-bell sup {
+    top: -7px;
+    right: -5px;
   }
 }

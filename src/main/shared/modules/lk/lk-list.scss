@@ -11,6 +11,13 @@
         background-color: #B9D0FF;
       }
     }
+
+    &.feature {
+      .lk-list__link {
+        color: $gray;
+        pointer-events: none;
+      }
+    }
   }
 
   &__link {
@@ -23,5 +30,39 @@
     color: $grayDark;
     border-radius: 6px;
     cursor: pointer;
+  }
+
+  &__select {
+    min-width: 86px;
+
+    @include r($mobile) {
+      min-width: 110px;
+    }
+
+    span.select__current {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  &--outer {
+    gap: 0;
+    justify-content: space-between;
+    margin-left: -116px;
+  }
+
+  &--mob {
+    justify-content: space-between;
+  }
+
+  &--to-bottom {
+    align-items: flex-end;
   }
 }

@@ -10,6 +10,22 @@
     flex-direction: column-reverse;
     width: 100%;
 
+    & > input:checked ~ span {
+      font-weight: 700;
+    }
+
+    &.error {
+      span.error {
+        display: block;
+        color: $yellowSecond;
+        margin-bottom: -20px;
+        font-size: 12px;
+      }
+      input.input {
+        border-color: red;
+      }
+    }
+
     span {
       font-family: $font-second;
       font-size: 14px;
@@ -17,6 +33,29 @@
       line-height: 20px;
       text-align: left;
       color: $gray;
+      transition: .2s linear;
+
+      &.error {
+        display: none;
+      }
+
+      &.form__error {
+        height: 0;
+        font-family: $font-second;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: $red;
+        overflow: hidden;
+        transition: .2s linear;
+      }
+    }
+
+    img.calendar-icon {
+      position: absolute;
+      z-index: 100;
+      left: 80px;
+      top: 30px;
     }
   }
 }
