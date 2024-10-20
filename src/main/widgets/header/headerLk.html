@@ -1,0 +1,188 @@
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__info">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <nav class="nav mob-hidden">
+                    <a href="#" class="nav__link active">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-house"></use>
+                        </svg>
+                        <span>Главная</span>
+                    </a>
+                    <div class="nav__link nav__link--menu">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-bird"></use>
+                        </svg>
+                        <span>О нас</span>
+                        <svg class="nav__chevrone">
+                            <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                        </svg>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__inner-link">
+                                Контакты
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Как добраться?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav__link nav__link--menu">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-doc"></use>
+                        </svg>
+                        <span>Документы</span>
+                        <svg class="nav__chevrone">
+                            <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                        </svg>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__inner-link">
+                                Образцы
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Инструкции
+                            </a>
+                            <a href="#" class="nav__inner-link">
+                                Анкета
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav__link">
+                        <svg class="icon nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-page"></use>
+                        </svg>
+                        <span>Новости</span>
+                    </a>
+                </nav>
+                <div class="user-notation desktop-hidden">
+                    <a href="#" class="user-notation__link user-notation__link--notation">
+                        <svg class="user-notation__icon user-notation__icon--mail">
+                            <use xlink:href="./assets/sprite.svg#icon-mail-fill"></use>
+                        </svg>
+                        <span class="user-notation__bubble">1</span>
+                    </a>
+                    <a href="#" class="user-notation__link user-notation__link--notation">
+                        <svg class="user-notation__icon user-notation__icon--notation">
+                            <use xlink:href="./assets/sprite.svg#icon-notation"></use>
+                        </svg>
+                        <span class="user-notation__bubble">2</span>
+                    </a>
+                </div>
+                <div class="burger">
+                    <span class="burger__item"></span>
+                </div>
+            </div>
+            <div class="header__login header__login--login">
+                <div class="user-nav user-nav--lk">
+                    <a href="#" class="user-nav__link">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-lk"></use>
+                        </svg>
+                        <span class="user-nav__text">Личный кабинет</span>
+                    </a>
+                    <a href="#" class="user-nav__user user-nav__user--admin">
+                        <picture class="user-nav__picture">
+                            <img src="./assets/images/user-2.png" alt="">
+                        </picture>
+                        <span class="user-nav__text">Иван<br>Петров</span>
+                        <p class="user-nav__status">Администратор</p>
+                    </a>
+                    <div class="user-notation">
+                        <a href="#" class="user-notation__link user-notation__link--notation">
+                            <svg class="user-notation__icon user-notation__icon--mail">
+                                <use xlink:href="./assets/sprite.svg#icon-mail-fill"></use>
+                            </svg>
+                            <span class="user-notation__bubble">1</span>
+                        </a>
+                        <a href="#" class="user-notation__link user-notation__link--notation">
+                            <svg class="user-notation__icon user-notation__icon--notation">
+                                <use xlink:href="./assets/sprite.svg#icon-notation"></use>
+                            </svg>
+                            <span class="user-notation__bubble">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="login-block">
+            <form action="/personal-cabinet/auth/" class="login-block__form login-form">
+                <label class="login-form__item">
+                    <input type="text" class="input input--small">
+                    <span>Электронная почта</span>
+                </label>
+                <label class="login-form__item">
+                            <span class="password-block password-block--light">
+                                <input type="password" class="input input--small">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                                <span>Пароль</span>
+                            </span>
+                </label>
+            </form>
+            <div class="login-block__login">
+                <button class="button button--slim button--login" data-login-btn>Вход</button>
+                <a href="#" class="text text--light">Не помню пароль</a>
+            </div>
+            <a href="#" class="login-block__register">Регистрация</a>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav__link active">
+                <svg class="icon nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-house"></use>
+                </svg>
+                <span>Главная</span>
+            </a>
+            <div class="nav__link nav__link--menu">
+                <svg class="icon nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-bird"></use>
+                </svg>
+                <span>О нас</span>
+                <svg class="nav__chevrone">
+                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                </svg>
+                <div class="nav__submenu">
+                    <a href="#" class="nav__inner-link">
+                        Контакты
+                    </a>
+                    <a href="#" class="nav__inner-link">
+                        Как добраться?
+                    </a>
+                </div>
+            </div>
+            <div class="nav__link nav__link--menu">
+                <svg class="icon nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-doc"></use>
+                </svg>
+                <span>Документы</span>
+                <svg class="nav__chevrone">
+                    <use xlink:href="./assets/sprite.svg#icon-chevrone"></use>
+                </svg>
+                <div class="nav__submenu">
+                    <a href="#" class="nav__inner-link">
+                        Образцы
+                    </a>
+                    <a href="#" class="nav__inner-link">
+                        Инструкции
+                    </a>
+                    <a href="#" class="nav__inner-link">
+                        Анкета
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav__link">
+                <svg class="icon nav__icon">
+                    <use xlink:href="./assets/sprite.svg#icon-page"></use>
+                </svg>
+                <span>Новости</span>
+            </a>
+        </nav>
+    </div>
+</header>

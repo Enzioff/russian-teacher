@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Педагогическая деятельность</h2>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Создать отчёт</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Загрузить отчёт</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Мои отчёты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <form class="form">
+                        <div class="article-doc">
+                            <div class="article-doc__info">
+                                <div class="article-doc__header">
+                                    <h3 class="article-doc__title">
+                                        Ваш готовый отчёт
+                                    </h3>
+                                </div>
+                                <div class="article-doc__footer">
+                                    <p class="article-doc__text">
+                                        Скан или фото подписанного директором отчёта необходимо загрузить в следующей
+                                        вкладке.
+                                    </p>
+                                    <div class="article-doc__download-block">
+                                        <div class="article-doc__download">
+                                            <p class="article-doc__size">0.3 Мб</p>
+                                            <a href="#" download class="button button--slim">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form__button form__button--left button button--transparent">Назад</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

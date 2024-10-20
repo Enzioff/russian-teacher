@@ -1,0 +1,77 @@
+.user-notation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include r($mobile) {
+    gap: 28px;
+    margin-left: auto;
+    padding-right: 24px;
+  }
+
+  &__link {
+    position: relative;
+
+    &:hover {
+      .user-notation__icon {
+        fill: $blueLight;
+      }
+    }
+  }
+
+  &__bubble {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    font-family: $font-second;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: $white;
+    background-color: $yellow;
+    border-radius: 100px;
+
+    @include r($mobile) {
+      top: -5px;
+      right: -5px;
+      width: 14px;
+      height: 14px;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    fill: $grayLight;
+    transition: .2s linear;
+
+    &--mail {
+      width: 28px;
+      height: 20px;
+
+      @include r($mobile) {
+        width: 16px;
+        height: 12px;
+      }
+    }
+
+    &--notation {
+      width: 25px;
+      height: 25px;
+
+      @include r($mobile) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

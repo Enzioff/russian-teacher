@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Педагогическая деятельность</h2>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Создать отчёт</a>
+                        </li>
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Загрузить отчёт</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Мои отчёты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <form class="form form--grid">
+                        <label class="form__item">
+                            <span class="select" data-select="">
+                                <span class="select__header">
+                                    <span class="select__current">2024</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="2020">2020</span>
+                                    <span class="select__item" data-value="2021">2021</span>
+                                    <span class="select__item" data-value="2022">2022</span>
+                                    <span class="select__item" data-value="2023">2023</span>
+                                    <span class="select__item" data-value="2024">2024</span>
+                                </span>
+                            </span>
+                            <span>Год</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="select" data-select="">
+                                <span class="select__header">
+                                    <span class="select__current">Август</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="September">Сентябрь</span>
+                                    <span class="select__item" data-value="October">Октябрь</span>
+                                    <span class="select__item" data-value="November">Ноябрь</span>
+                                </span>
+                            </span>
+                            <span>Месяц</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <div class="article-doc article-doc--row">
+                            <div class="article-doc__info">
+                                <div class="article-doc__header">
+                                    <h3 class="article-doc__title">Загрузите отчёт</h3>
+                                </div>
+                                <div class="article-doc__footer">
+                                    <p class="article-doc__text">
+                                        Скан или фото подписанного директором отчёта.
+                                    </p>
+                                    <div class="article-doc__download">
+                                        <form action="/documents/application-form/" class="article-doc__form">
+                                            <input type="hidden" name="sessid" id="sessid"
+                                                   value="2a3320c44e2b5f845eea9ffdac309249">
+                                            <input type="hidden" name="WEB_FORM_ID" value="2">
+                                            <div class="article-doc__download-block download">
+                                                <div class="download__info">
+                                                    <p class="download__size">2 Мб макс.</p>
+                                                    <label class="button button--purple button--slim">
+                                                        <span>Выбрать файл(ы)</span>
+                                                        <input type="file" hidden="" accept=".png, .jpg, .jpeg">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="article-doc__download-block download">
+                                                <div class="download__info">
+                                                    <button class="button button--slim">Загрузить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

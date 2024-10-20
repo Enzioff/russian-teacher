@@ -1,0 +1,96 @@
+.select-account {
+  min-width: 665px;
+  padding: 21px 39px 42px;
+  background-color: $white;
+  border-radius: 15px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__title {
+    font-family: $font-second;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    transition: .2s linear;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    input:checked {
+      & ~ .select-account__info {
+        background-color: $gray;
+
+        .select-account__icon {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 2px;
+    border: 2px solid $green;
+    border-radius: 50%;
+
+    img {
+      @include coverFull();
+      border-radius: 50%;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    margin-left: auto;
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+  }
+}

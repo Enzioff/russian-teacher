@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.header %>
+<main class="main">
+    <section class="section pt-68 ptm-30 pb-100 pbm-50">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Документы > Анкета соискателя</h2>
+            </div>
+            <div class="columns mb-140 mbm-50">
+                <div class="columns__col-6 columns__col-mob-4">
+                    <article class="article-card">
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">Вариант №1 — скачать</h3>
+                            <p class="article-card__text">
+                                Скачайте пустой бланк, распечатайте и заполните анкету от руки и подпишите.<br>
+                                Загрузите анкету в форме ниже.
+                            </p>
+                        </div>
+                        <div class="article-card__footer">
+                            <div class="download">
+                                <picture class="download__icon">
+                                    <img src="./assets/images/icon-pdf.svg" alt="">
+                                </picture>
+                                <div class="download__info">
+                                    <p class="download__size">0.3 Мб</p>
+                                    <a href="#" download class="download__button button button--slim">Скачать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col-6 columns__col-mob-4">
+                    <article class="article-card">
+                        <div class="article-card__info">
+                            <h3 class="article-card__title">Вариант №2 — заполнить онлайн</h3>
+                            <p class="article-card__text">
+                                Заполните анкету онлайн, вы сможете скачать уже заполненный бланк, распечатайте и подпишите.<br>
+                                Загрузите анкету в форме ниже.
+                            </p>
+                        </div>
+                        <div class="article-card__footer">
+                            <div class="download">
+                                <div class="download__info">
+                                    <a href="#" class="download__button button button--slim">Онлайн-анкета</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col-12 columns__col-mob-4 mb-68 mob-hidden">
+                    <h2 class="title">Загрузить анкету</h2>
+                </div>
+                <div class="columns__col-12 columns__col-mob-4">
+                    <div class="article-doc article-doc--row">
+                        <picture class="article-doc__picture mob-hidden">
+                            <img src="./assets/images/icon-upload.svg" alt="">
+                        </picture>
+                        <div class="article-doc__info">
+                            <div class="article-doc__header">
+                                <h3 class="article-doc__title">
+                                    Загрузите фото или скан скачанной и заполненной анкеты в бумажном виде.
+                                </h3>
+                            </div>
+                            <div class="article-doc__footer">
+                                <div class="article-doc__download">
+                                    <div class="article-doc__download">
+                                        <form action="/documents/application-form/" class="article-doc__form">
+                                            <input type="hidden" name="sessid" id="sessid"
+                                                   value="2a3320c44e2b5f845eea9ffdac309249">
+                                            <input type="hidden" name="WEB_FORM_ID" value="2">
+                                            <div class="article-doc__download-block download">
+                                                <picture class="download__icon desktop-hidden">
+                                                    <img src="./assets/images/icon-upload.svg" alt="">
+                                                </picture>
+                                                <div class="download__info">
+                                                    <p class="download__size">2 Мб макс.</p>
+                                                    <label class="button button--purple button--slim">
+                                                        <span>Выбрать файл(ы)</span>
+                                                        <input type="file" hidden="" accept=".png, .jpg, .jpeg">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="article-doc__download-block download">
+                                                <div class="download__info">
+                                                    <button class="button button--slim">Загрузить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

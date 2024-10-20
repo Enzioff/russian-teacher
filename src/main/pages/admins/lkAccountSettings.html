@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Аккаунты &gt; Мария Иванова</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Персональные данные</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Обратная связь модератора</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Уведомление</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <form action="/personal-cabinet/" class="form">
+                        <div class="lk-user lk-user--admin" data-user-photo>
+                            <picture class="lk-user__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                            <label class="button button--purple">
+                                <span>Загрузить фото</span>
+                                <input type="file" hidden accept=".png, .jpg, .jpeg">
+                            </label>
+                        </div>
+                        <label class="form__item">
+                            <input type="text" class="input" value="Иванов">
+                            <span>Фамилия</span>
+                            <span class="form__error">Пожалуйста, введите фамилию</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input" value="Иван">
+                            <span>Имя</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="text" class="input" value="Иванович">
+                            <span>Отчество</span>
+                            <span class="form__error">Пожалуйста, введите отчество</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="select" data-select>
+                                <span class="select__header" data-title="ACCOUNT_TYPE">
+                                    <span class="select__current">Модератор Тип: 1</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Admin">Администратор</span>
+                                    <span class="select__item" data-value="Moder_1">Модератор Тип: 1</span>
+                                    <span class="select__item" data-value="Moder_2">Модератор Тип: 2</span>
+                                    <span class="select__item" data-value="Moder_3">Модератор Тип: 3</span>
+                                    <span class="select__item" data-value="Psycho">Психолог</span>
+                                </span>
+                            </span>
+                            <span>Статус</span>
+                        </label>
+                        <label class="form__item">
+                            <input type="email" class="input" value="ipetrov@myemail.ru">
+                            <span>Электронная почта</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                                <span>Изменить пароль</span>
+                            </span>
+                            <span class="form__error">Пожалуйста, введите пароль</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                                <span>Повторите пароль</span>
+                            </span>
+                            <span class="form__error">Пароль не совпадает</span>
+                        </label>
+                        <label class="form__item form__item--row">
+                            <span class="switcher">
+                                <input hidden type="checkbox" checked>
+                                <span class="switcher__block">
+                                    <span class="switcher__item"></span>
+                                </span>
+                            </span>
+                            <span>Активный аккаунт</span>
+                        </label>
+                        <div class="form__control">
+                            <button class="button button--slim button--red">Отменить</button>
+                            <button class="button button--slim button--green">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

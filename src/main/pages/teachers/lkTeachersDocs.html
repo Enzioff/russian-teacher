@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Аккаунты &gt; Иван Петров</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Персональные данные</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Пед. деятельность</a>
+                        </li>
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Документы</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Уведомления</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <ul class="lk-list mob-hidden mb-72">
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Полугодовой</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Годовой</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Табель учёта раб. времени</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Карты эффективности</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Служебные записки</a>
+                        </li>
+                    </ul>
+                    <div class="lk-content__table">
+                        <table class="table table--between">
+                            <thead class="table__header">
+                            <tr class="table__line">
+                                <th class="table__item table__item--head">ID</th>
+                                <th class="table__item table__item--head">Период</th>
+                                <th class="table__item table__item--head">Дата создания</th>
+                                <th class="table__item table__item--head">Статус</th>
+                                <th class="table__item table__item--head">Скачать</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table__body">
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item">I полугодие 2024</td>
+                                <td class="table__item">03.06.2024</td>
+                                <td class="table__item">
+                                    <span class="select select--middle" data-select="">
+                                        <span class="select__header">
+                                            <span class="select__current">Рассматривается</span>
+                                            <svg class="select__icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="select__content">
+                                            <span class="select__item select__item--wait" data-value="2020">Рассматривается</span>
+                                            <span class="select__item select__item--rejected" data-value="2021">Отклонён</span>
+                                            <span class="select__item select__item--approved" data-value="2022">Принят</span>
+                                        </span>
+                                    </span>
+                                </td>
+                                <td class="table__item">
+                                    <a href="#" class="button button--short">Скачать</a>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item">I полугодие 2024</td>
+                                <td class="table__item">03.06.2024</td>
+                                <td class="table__item">
+                                    <span class="select select--middle" data-select="">
+                                        <span class="select__header">
+                                            <span class="select__current">Рассматривается</span>
+                                            <svg class="select__icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="select__content">
+                                            <span class="select__item select__item--wait" data-value="2020">Рассматривается</span>
+                                            <span class="select__item select__item--rejected" data-value="2021">Отклонён</span>
+                                            <span class="select__item select__item--approved" data-value="2022">Принят</span>
+                                        </span>
+                                    </span>
+                                </td>
+                                <td class="table__item">
+                                    <a href="#" class="button button--short">Скачать</a>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item">I полугодие 2024</td>
+                                <td class="table__item">03.06.2024</td>
+                                <td class="table__item">
+                                    <span class="select select--middle" data-select="">
+                                        <span class="select__header">
+                                            <span class="select__current">Рассматривается</span>
+                                            <svg class="select__icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="select__content">
+                                            <span class="select__item select__item--wait" data-value="2020">Рассматривается</span>
+                                            <span class="select__item select__item--rejected" data-value="2021">Отклонён</span>
+                                            <span class="select__item select__item--approved" data-value="2022">Принят</span>
+                                        </span>
+                                    </span>
+                                </td>
+                                <td class="table__item">
+                                    <a href="#" class="button button--short">Скачать</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

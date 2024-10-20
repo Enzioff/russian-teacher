@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk head--lk-column">
+                        <h2 class="title">Преподаватели</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--blue" data-fancybox data-src="#selectAccount">Добавить в список</a>
+                            <a href="#" class="button button--blue">Создать нового</a>
+                            <div class="select select--center select--middle" data-select="">
+                                <span class="select__header" data-title="ACCOUNT_TYPE">
+                                    <span class="select__current">Страна</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Admin">Администратор</span>
+                                    <span class="select__item" data-value="Moder_1">Модератор Тип: 1</span>
+                                    <span class="select__item" data-value="Moder_2">Модератор Тип: 2</span>
+                                    <span class="select__item" data-value="Moder_3">Модератор Тип: 3</span>
+                                    <span class="select__item" data-value="Psycho">Психолог</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="lk-list lk-list--to-bottom mob-hidden">
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Все преподаватели</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Ожидают активацию</a>
+                        </li>
+                        <li class="lk-list__search">
+                            <form action="#" class="search">
+                                <input type="search" placeholder="Поиск">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <div class="lk-content__table">
+                        <table class="table table--center table--between">
+                            <thead class="table__header">
+                            <tr class="table__line">
+                                <th class="table__item table__item--head">ID</th>
+                                <th class="table__item table__item--head">Имя</th>
+                                <th class="table__item table__item--head">Страна</th>
+                                <th class="table__item table__item--head">Сообщения</th>
+                                <th class="table__item table__item--head">Отчёты</th>
+                                <th class="table__item table__item--head">Модератор</th>
+                                <th class="table__item table__item--head">Удалить аккаунт</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table__body">
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar avatar--admin">
+                                        <img src="./assets/images/user-1.png" alt="">
+                                    </picture>
+                                    <span>Валентин Карпов</span>
+                                </td>
+                                <td class="table__item">AM</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">
+                                    <form action="#" class="remove-form">
+                                        <button class="remove-form__button">
+                                            <svg class="icon">
+                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

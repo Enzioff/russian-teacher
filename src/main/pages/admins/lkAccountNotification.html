@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Аккаунты &gt; Мария Иванова</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Персональные данные</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Обратная связь модератора</a>
+                        </li>
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Уведомление</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <form class="form">
+                        <label class="form__item">
+                            <input class="input" type="text">
+                            <span>Тема</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <textarea class="input input--area"></textarea>
+                            <span>Текст</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <button class="form__button button button--slim">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

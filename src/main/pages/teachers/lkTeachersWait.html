@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk head--lk-column">
+                        <h2 class="title">Преподаватели</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--blue" disabled>Добавить в список</a>
+                            <a href="#" class="button button--blue">Создать нового</a>
+                            <div class="select select--center select--middle" data-select="">
+                                <span class="select__header" data-title="ACCOUNT_TYPE">
+                                    <span class="select__current">Страна</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="Admin">Администратор</span>
+                                    <span class="select__item" data-value="Moder_1">Модератор Тип: 1</span>
+                                    <span class="select__item" data-value="Moder_2">Модератор Тип: 2</span>
+                                    <span class="select__item" data-value="Moder_3">Модератор Тип: 3</span>
+                                    <span class="select__item" data-value="Psycho">Психолог</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="lk-list lk-list--to-bottom mob-hidden">
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Все преподаватели</a>
+                        </li>
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Ожидают активацию</a>
+                        </li>
+                        <li class="lk-list__search">
+                            <form action="#" class="search">
+                                <input type="search" placeholder="Поиск">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <div class="lk-content__table">
+                        <table class="table">
+                            <thead class="table__header">
+                            <tr class="table__line">
+                                <th class="table__item table__item--head">ID</th>
+                                <th class="table__item table__item--head">Имя</th>
+                                <th class="table__item table__item--head">Эл. почта</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table__body">
+                            <tr class="table__line">
+                                <td class="table__item">0007</td>
+                                <td class="table__item">Валентин Карпов</td>
+                                <td class="table__item table__item--row">
+                                    <span class="table__text table__text--strong">valkarp@gmail.com</span>
+                                    <a href="#" class="button button--short button--red">Отклонить</a>
+                                    <a href="#" class="button button--short">Подтвердить</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

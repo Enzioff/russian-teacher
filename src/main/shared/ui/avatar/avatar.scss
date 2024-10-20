@@ -1,0 +1,27 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid $green;
+  border-radius: 50%;
+
+  &--admin {
+    border-color: $yellow;
+  }
+
+  &--moder {
+    border-color: $red;
+  }
+
+  &--psycho {
+    border-color: $purple;
+  }
+
+  img {
+    @include coverFull();
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Преподаватели &gt; Создание</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk-content__body">
+                    <form action="#" class="form">
+                        <div class="form__item form__item--grid-3">
+                            <label class="form__item">
+                                <input type="text" class="input">
+                                <span>Фамилия</span>
+                                <span class="form__error">Пожалуйста, введите фамилию</span>
+                            </label>
+                            <label class="form__item">
+                                <input type="text" class="input">
+                                <span>Имя</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </label>
+                            <label class="form__item">
+                                <input type="text" class="input">
+                                <span>Отчество</span>
+                                <span class="form__error">Пожалуйста, введите отчество</span>
+                            </label>
+                        </div>
+                        <label class="form__item">
+                            <input type="email" class="input">
+                            <span>Электронная почта</span>
+                            <span class="form__error">Пожалуйста, введите имя</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                                <span>Пароль</span>
+                            </span>
+                            <span class="form__error">Пожалуйста, введите пароль</span>
+                        </label>
+                        <label class="form__item">
+                            <span class="password-block">
+                                <input type="password" class="input">
+                                <button class="password-block__btn" type="button">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                        <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
+                                    </svg>
+                                </button>
+                                <span>Повторите пароль</span>
+                            </span>
+                            <span class="form__error">Пароль не совпадает</span>
+                        </label>
+                        <div class="form__control">
+                            <button class="button button--slim button--green">Создать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

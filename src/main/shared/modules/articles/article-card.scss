@@ -1,0 +1,33 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 20px 40px;
+  min-height: 260px;
+  border-radius: 25px;
+  border: 1px solid $grayLight;
+  box-shadow: 0 20px 30px 0 #B0D5FF4D;
+
+  @include r($mobile) {
+    min-height: 270px;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  &__title {
+    @include h2()
+  }
+
+  &__text {
+    @include text($black, $font-second);
+    font-weight: 500;
+  }
+}

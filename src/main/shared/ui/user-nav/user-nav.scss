@@ -1,0 +1,107 @@
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 32px;
+
+  &--lk {
+    .user-nav__link {
+      .user-nav__text {
+        color: $green;
+      }
+
+      .user-nav__icon {
+        fill: $green;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    fill: $grayLight;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__text {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $white;
+  }
+
+  &__picture {
+    display: flex;
+    margin-bottom: 9px;
+    padding: 3px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid $green;
+    overflow: hidden;
+
+    img {
+      @include coverFull();
+      border-radius: 50%;
+    }
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .user-nav__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+    }
+
+    &--admin {
+      .user-nav__picture {
+        border-color: $yellow;
+      }
+      .user-nav__status {
+        color: $yellow;
+      }
+    }
+
+    &--moder {
+      .user-nav__picture {
+        border-color: $red;
+      }
+      .user-nav__status {
+        color: $red;
+      }
+    }
+
+    &--psycho {
+      .user-nav__picture {
+        border-color: $purple;
+      }
+      .user-nav__status {
+        color: $purple;
+      }
+    }
+  }
+
+  &__status {
+    font-family: $font-second;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $yellow;
+  }
+}

@@ -1,0 +1,45 @@
+.auth {
+  &-first-one-text {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &-reg-links-span {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+  }
+
+  &-login-block__register {
+    color: rgb(66, 65, 60);
+    border-bottom: 1px solid rgb(66, 65, 60);
+    text-decoration: none;
+  }
+
+  &-message-block-container {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.main-page-slider .swiper-slide {
+  margin-right: 0 !important;
+}
+
+.application-form-file__container {
+  flex-basis: 92%;
+}
+
+.application-form-file__form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.application-form-file__icon {
+  flex: 0 1;
+  flex-basis: 64px;
+}
