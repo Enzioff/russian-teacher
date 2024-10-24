@@ -45,4 +45,26 @@
     line-height: 21.86px;
     color: $white;
   }
+
+  &__logos {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    width: 129px;
+    height: 60px;
+
+    &--cms {
+      width: 139px;
+      height: 42px;
+    }
+
+    &--ministry {
+      width: 108px;
+      height: 42px;
+    }
+  }
 }

@@ -16,9 +16,26 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="header__info">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" alt="">
-                </a>
+                <div class="header__logos">
+                    <a href="#" class="logo">
+                        <picture>
+                            <source srcset="./assets/images/logo-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </picture>
+                    </a>
+                    <a href="#" class="logo logo--auto">
+                        <picture>
+                            <source srcset="./assets/images/logo-cms-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo-cms.svg" alt="">
+                        </picture>
+                    </a>
+                    <a href="#" class="logo logo--auto">
+                        <picture>
+                            <source srcset="./assets/images/logo-ministry-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo-ministry.svg" alt="">
+                        </picture>
+                    </a>
+                </div>
                 <nav class="nav mob-hidden">
                     <a href="#" class="nav__link active">
                         <svg class="icon nav__icon">
@@ -260,15 +277,22 @@
     <div class="container">
         <div class="footer__wrapper">
             <div class="columns">
-                <div class="columns__col-2 columns__col-mob-4 order-mob--2">
+                <div class="columns__col-5 columns__col-mob-4 order-mob--2">
                     <div class="footer__copy">
-                        <a href="#" class="logo mob-hidden">
-                            <img src="./assets/images/logo.svg" alt="">
-                        </a>
-                        <p class="text text--light">2024 Все права защищены</p>
+                        <div class="footer__logos">
+                            <a href="#" class="footer__logo mob-hidden">
+                                <img src="./assets/images/logo-short.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__logo footer__logo--cms mob-hidden">
+                                <img src="./assets/images/logo-cms.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__logo footer__logo--ministry mob-hidden">
+                                <img src="./assets/images/logo-ministry.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="text text--light">Все права защищены, 2017 - 2024</p>
                     </div>
                 </div>
-                <div class="columns__col-3 mob-hidden"></div>
                 <div class="columns__col-3 mob-hidden">
                     <nav class="footer__nav">
                         <a href="#" class="footer__link">Главная</a>

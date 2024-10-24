@@ -2,9 +2,26 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="header__info">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" alt="">
-                </a>
+                <div class="header__logos">
+                    <a href="#" class="logo">
+                        <picture>
+                            <source srcset="./assets/images/logo-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </picture>
+                    </a>
+                    <a href="#" class="logo logo--auto">
+                        <picture>
+                            <source srcset="./assets/images/logo-cms-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo-cms.svg" alt="">
+                        </picture>
+                    </a>
+                    <a href="#" class="logo logo--auto">
+                        <picture>
+                            <source srcset="./assets/images/logo-ministry-short.svg" media="(max-width: 1200px)">
+                            <img src="./assets/images/logo-ministry.svg" alt="">
+                        </picture>
+                    </a>
+                </div>
                 <nav class="nav mob-hidden">
                     <a href="#" class="nav__link active">
                         <svg class="icon nav__icon">
