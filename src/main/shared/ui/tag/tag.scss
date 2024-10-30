@@ -1,0 +1,22 @@
+.tag {
+  display: block;
+  width: max-content;
+  padding: 3px 6px;
+
+  font-family: $font-second;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: $white;
+
+  background-color: $blue;
+  border-radius: 6px;
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--green {
+    background-color: $green;
+  }
+}

@@ -6,6 +6,7 @@ import HeaderLogin from "./headerLogin";
 import UpdateUserPhoto from "./updateUserPhoto";
 import {Fancybox} from "@fancyapps/ui";
 import CustomFile from "./customFile";
+import CustomTags from "./customTags";
 
 class App {
     constructor() {
@@ -22,6 +23,7 @@ class App {
         this.createFancyBox()
         this.createCustomFile()
         this.createSwitcher()
+        this.createCustomTags()
     }
 
     createSlider = () => {
@@ -99,6 +101,12 @@ class App {
                 }
             })
         })
+    }
+
+    createCustomTags = () => {
+        const customTags = document.querySelector('.custom-tags');
+        if (!customTags) return;
+        new CustomTags(customTags)
     }
 }
 
