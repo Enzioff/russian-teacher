@@ -10,21 +10,21 @@
             <div class="lk-content">
                 <div class="lk-content__header">
                     <div class="head head--lk">
-                        <h2 class="title">Обратная связь > Создать</h2>
+                        <h2 class="title">Документы > Добавить</h2>
                     </div>
                     <a href="#" class="button">Назад</a>
                 </div>
                 <div class="lk-content__body">
                     <form class="form">
                         <label class="form__item">
-                            <input type="email" class="input" placeholder="Введите тему обращения">
-                            <span>Тема</span>
+                            <input type="email" class="input" placeholder="Введите заголовок">
+                            <span>Заголовок</span>
                             <span class="form__error">Пожалуйста, введите тему</span>
                         </label>
                         <label class="form__item">
                             <span class="select" data-select>
                                 <span class="select__header" data-title="TYPE">
-                                    <span class="select__current">Выберите тип обращения</span>
+                                    <span class="select__current">Выберите тип документа</span>
                                     <svg class="select__icon">
                                         <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
                                     </svg>
@@ -38,12 +38,12 @@
                                     <span class="select__item" data-value="Dagestan">Дагестан</span>
                                 </span>
                             </span>
-                            <span>Тип обращения</span>
+                            <span>Тип</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <label class="form__item">
                             <textarea class="input input--area"></textarea>
-                            <span>Сообщение</span>
+                            <span>Описание</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <div class="form__item">
@@ -57,7 +57,9 @@
                             <span>Файл</span>
                             <span class="form__error">Пожалуйста, введите имя</span>
                         </div>
-                        <button class="form__button button button--slim">Создать обращение</button>
+                        <div class="form__control">
+                            <button class="button button--slim">Создать</button>
+                        </div>
                     </form>
                 </div>
             </div>

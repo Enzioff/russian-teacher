@@ -5,4 +5,8 @@
   &--block {
     @include h2();
   }
+
+  &--small {
+    @include h3();
+  }
 }

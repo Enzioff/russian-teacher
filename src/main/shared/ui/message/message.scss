@@ -1,0 +1,46 @@
+.message {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  min-width: 318px;
+  padding: 14px 30px;
+  border-radius: 25px;
+  background-color: $grayLight;
+
+  @include r($mobile) {
+    width: 100%;
+  }
+
+  &__picture {
+    display: flex;
+  }
+
+  &__time {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    font-family: $font-second;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: $blue;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__text {
+    @include text($grayDark, $font-second);
+    font-weight: 600;
+  }
+
+  &__size {
+    @include text($grayDark, $font-second);
+  }
+}

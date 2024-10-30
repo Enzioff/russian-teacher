@@ -5,6 +5,7 @@ import CustomSelect from "./customSelect";
 import HeaderLogin from "./headerLogin";
 import UpdateUserPhoto from "./updateUserPhoto";
 import {Fancybox} from "@fancyapps/ui";
+import CustomFile from "./customFile";
 
 class App {
     constructor() {
@@ -19,6 +20,8 @@ class App {
         this.createHeaderLogin()
         this.createUpdateUserPhoto()
         this.createFancyBox()
+        this.createCustomFile()
+        this.createSwitcher()
     }
 
     createSlider = () => {
@@ -72,6 +75,30 @@ class App {
 
     createFancyBox = () => {
         Fancybox.bind('[data-fancybox]')
+    }
+
+    createCustomFile = () => {
+        const fileBlocks = document.querySelectorAll('.file-block');
+        if (!fileBlocks) return;
+        fileBlocks.forEach(fileBlock => {
+            new CustomFile(fileBlock)
+        })
+    }
+
+    createSwitcher = () => {
+        const switcherList = document.querySelectorAll('[data-switcher]');
+        if (!switcherList) return;
+        switcherList.forEach(switcher => {
+            const input = switcher.querySelector('input')
+            const text = switcher.querySelector('[data-switcher-text]')
+            input.addEventListener('change', () => {
+                if (input.checked) {
+                    text.textContent = 'Вкл.'
+                } else {
+                    text.textContent = 'Выкл.'
+                }
+            })
+        })
     }
 }
 

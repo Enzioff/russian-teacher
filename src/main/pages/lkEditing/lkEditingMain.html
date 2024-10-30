@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Главная страница</h2>
+                    </div>
+                    <div class="notification">
+                        <svg class="notification__icon">
+                            <use xlink:href="./assets/sprite.svg#icon-notification"></use>
+                        </svg>
+                        <p class="notification__text">
+                            Если эти поля останутся пустыми, в поле баннера<br>
+                            будет отображаться последняя новость.
+                        </p>
+                    </div>
+                </div>
+                <div class="lk-content__body">
+                    <form action="#" class="form form--offset">
+                        <fieldset class="form__wrapper form__wrapper--offset-big">
+                            <h3 class="title title--small">Баннер №1</h3>
+                            <label class="form__item">
+                                <input type="text" class="input" placeholder="Введите заголовок">
+                                <span>Заголовок</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </label>
+                            <div class="form__item">
+                                <div class="file-block">
+                                    <span class="file-block__text">Выберите файл</span>
+                                    <label class="button button--short">
+                                        Выбрать файл
+                                        <input type="file" hidden>
+                                    </label>
+                                </div>
+                                <span>Изображение</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </div>
+                            <label class="form__item">
+                                <input type="text" class="input" placeholder="http://">
+                                <span>Ссылка</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </label>
+                        </fieldset>
+                        <fieldset class="form__wrapper form__wrapper--offset-big">
+                            <h3 class="title title--small">Баннер №2</h3>
+                            <label class="form__item">
+                                <input type="text" class="input" placeholder="Введите заголовок">
+                                <span>Заголовок</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </label>
+                            <div class="form__item">
+                                <div class="file-block">
+                                    <span class="file-block__text">Выберите файл</span>
+                                    <label class="button button--short">
+                                        Выбрать файл
+                                        <input type="file" hidden>
+                                    </label>
+                                </div>
+                                <span>Изображение</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </div>
+                            <label class="form__item">
+                                <input type="text" class="input" placeholder="http://">
+                                <span>Ссылка</span>
+                                <span class="form__error">Пожалуйста, введите имя</span>
+                            </label>
+                        </fieldset>
+                        <div class="form__control">
+                            <button class="button button--slim button--green">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

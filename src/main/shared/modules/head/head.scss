@@ -52,6 +52,13 @@
     @include r($mobile) {
       gap: 5px;
       justify-content: space-between;
+      width: 100%;
+    }
+
+    &--col {
+      @include r($mobile) {
+        flex-direction: column;
+      }
     }
   }
 }

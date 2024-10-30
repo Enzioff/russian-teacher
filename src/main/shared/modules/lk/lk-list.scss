@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  min-height: 32px;
+  overflow-x: auto;
   z-index: 1;
 
   &__item {
+    flex-shrink: 0;
 
     &.active {
       .lk-list__link {
@@ -60,9 +63,5 @@
 
   &--mob {
     justify-content: space-between;
-  }
-
-  &--to-bottom {
-    align-items: flex-end;
   }
 }

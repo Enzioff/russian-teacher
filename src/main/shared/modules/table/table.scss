@@ -148,6 +148,10 @@
         flex-shrink: 0;
       }
     }
+
+    &--fixed {
+      width: 140px !important;
+    }
   }
 
   &__info {

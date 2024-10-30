@@ -1,0 +1,16 @@
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    @include text(#000000, $font-second)
+  }
+}

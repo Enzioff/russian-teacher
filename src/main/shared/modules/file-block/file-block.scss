@@ -1,0 +1,14 @@
+.file-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $black;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    @include text($grayDark, $font-second);
+    font-weight: 600 !important;
+  }
+}

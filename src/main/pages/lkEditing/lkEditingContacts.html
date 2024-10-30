@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Контакты</h2>
+                    </div>
+                </div>
+                <div class="lk-content__body">
+                    <form action="#" class="form">
+                        <label class="form__item">
+                            <textarea class="input input--area"></textarea>
+                            <span>Контактные данные</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <label class="form__item">
+                            <textarea class="input input--area"></textarea>
+                            <span>Описание</span>
+                            <span class="form__error">Неправильный формат</span>
+                        </label>
+                        <div class="form__control">
+                            <button class="button button--slim button--red">Отменить</button>
+                            <button class="button button--slim button--green">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

@@ -36,3 +36,6 @@ import './icon-remove.svg';
 import './icon-message.svg';
 import './icon-doc-3.svg';
 import './icon-accept.svg';
+import './icon-graph.svg';
+import './icon-notification.svg';
+import './icon-pencil.svg';
