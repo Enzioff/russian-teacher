@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Аккаунты &gt; Мария Иванова</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                    <ul class="lk-list mob-hidden">
+                        <li class="lk-list__item active">
+                            <a href="#" class="lk-list__link">Персональные данные</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Обратная связь модератора</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Документы</a>
+                        </li>
+                        <li class="lk-list__item">
+                            <a href="#" class="lk-list__link">Уведомление</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lk-content__body">
+                    <div class="profile">
+                        <div class="lk-user">
+                            <picture class="lk-user__picture">
+                                <img src="./assets/images/user-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="profile__info">
+                            <div class="profile__element">
+                                <p class="profile__title">Фамилия</p>
+                                <p class="profile__text">Петров</p>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Квалификационная категория</p>
+                                <p class="profile__text"></p>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Имя</p>
+                                <p class="profile__text">Иван</p>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Город проживания в России</p>
+                                <p class="profile__text">Москва</p>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Отчество</p>
+                                <p class="profile__text">Степанович</p>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Дата рождения</p>
+                                <p class="profile__text">11.12.1982</p>
+                            </div>
+                            <div class="profile__element profile__element--full">
+                                <p class="profile__title">О себе</p>
+                                <textarea class="input input--area input--light" readonly>Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения модели развития. Задача организации, в особенности же начало повседневной работы по формированию позиции играет важную роль в формировании направлений прогрессивного развити.</textarea>
+                            </div>
+                            <div class="profile__element">
+                                <p class="profile__title">Дата рождения</p>
+                                <p class="profile__text">11.12.1982</p>
+                            </div>
+                            <form action="#" class="profile__element profile__element--full">
+                                <label class="profile__element profile__element--row">
+                                    <span class="switcher">
+                                        <input hidden type="checkbox" checked>
+                                        <span class="switcher__block">
+                                            <span class="switcher__item"></span>
+                                        </span>
+                                    </span>
+                                    <span class="profile__text">Активный аккаунт</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

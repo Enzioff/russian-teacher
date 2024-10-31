@@ -1,0 +1,38 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+
+    &--full {
+      grid-column: span 2;
+    }
+
+    &--row {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    @include text($grayDark, $font-second);
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    @include text($grayDark, $font-second);
+    font-weight: 600;
+  }
+}

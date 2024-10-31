@@ -12,7 +12,6 @@ class customFile {
         this.parentElement = this.fileBlock.parentNode;
         this.uploadList = this.parentElement.querySelector('.uploaded-list');
 
-
         this.init()
     }
 

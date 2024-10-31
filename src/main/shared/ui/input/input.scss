@@ -39,6 +39,11 @@
     }
   }
 
+  &--light {
+    border-color: $grayLight;
+    font-weight: 400;
+  }
+
   &--small {
     border-color: $gray;
     color: $white;
