@@ -22,30 +22,30 @@
                             </p>
                         </div>
                     </div>
-                    <form class="form">
+                    <form class="form" action="#">
                         <label class="form__item">
-                            <input type="email" class="input">
+                            <input type="text" class="input" name="EMAIL" data-email>
                             <span>Электронная почта</span>
                             <span class="form__error">Неправильный формат электронной почты</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" class="input" name="SURNAME">
                             <span>Фамилия</span>
                             <span class="form__error">Пожалуйста, введите фамилию</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" class="input" name="NAME">
                             <span>Имя</span>
                             <span class="form__error">Пожалуйста, введите имя</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" class="input" name="OTCHEVSCTVO">
                             <span>Отчество</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
-                        <label class="form__item">
+                        <label class="form__item" data-password>
                             <span class="password-block">
-                                <input type="password" class="input">
+                                <input type="password" class="input" name="PASSWORD">
                                 <button class="password-block__btn" type="button">
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#icon-eye"></use>
@@ -56,9 +56,9 @@
                             </span>
                             <span class="form__error">Пожалуйста, введите пароль</span>
                         </label>
-                        <label class="form__item">
+                        <label class="form__item" data-password-accept>
                             <span class="password-block">
-                                <input type="password" class="input">
+                                <input type="password" class="input" name="PASSWORD_ACCEPT">
                                 <button class="password-block__btn" type="button">
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#icon-eye"></use>
@@ -69,7 +69,7 @@
                             </span>
                             <span class="form__error">Пароль не совпадает</span>
                         </label>
-                        <button class="form__button button button--slim">Подтвердить</button>
+                        <button class="form__button button button--slim" type="submit">Подтвердить</button>
                     </form>
                 </div>
             </div>

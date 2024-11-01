@@ -556,12 +556,12 @@
 </footer>
 
 <div class="hidden">
-    <div class="select-account" id="selectAccount">
+    <div class="select-account select-account--list" id="selectAccount">
         <form action="#" class="select-account__form">
             <div class="select-account__header">
                 <div class="select-account__meta">
                     <h3 class="select-account__title">Добавить преподавателя в список</h3>
-                    <button class="button button--short button--blue">Подтвердить</button>
+                    <button class="button button--short button--blue" type="submit">Подтвердить</button>
                 </div>
                 <div class="search">
                     <input type="search" placeholder="Поиск">
@@ -642,6 +642,29 @@
                             </svg>
                         </span>
                     </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="select-account" id="sign">
+        <form action="#" class="select-account__form">
+            <div class="select-account__header">
+                <div class="select-account__meta">
+                    <h3 class="select-account__title">Добавить преподавателя в список</h3>
+                    <button class="button button--short button--blue" type="submit">Подтвердить</button>
+                </div>
+            </div>
+            <div class="select-account__body">
+                <div class="form__item">
+                    <div class="file-block">
+                        <span class="file-block__text">Загрузить</span>
+                        <label class="button button--short">
+                            Выбрать файл
+                            <input type="file" hidden="">
+                        </label>
+                    </div>
+                    <span>Файл</span>
+                    <span class="form__error">Пожалуйста, введите имя</span>
                 </div>
             </div>
         </form>
@@ -728,6 +751,7 @@
             <a href="./404.html" class="temp__link">404</a>
             <a href="./lkTeachersModer.html" class="temp__link">Личный кабинет - Модератор - Преподаватели - Все</a>
             <a href="./lkAccountModer.html" class="temp__link">Личный кабинет - Модератор - Преподаватели - Просмотр</a>
+            <a href="./lkTeachersChat.html" class="temp__link">Личный кабинет - Преподаватели - Чат</a>
         </div>
     </div>
 </div>

@@ -7,6 +7,9 @@ import UpdateUserPhoto from "./updateUserPhoto";
 import {Fancybox} from "@fancyapps/ui";
 import CustomFile from "./customFile";
 import CustomTags from "./customTags";
+import Requests from "./requests";
+import Mask from "./mask";
+import CustomFancybox from "./Fancybox";
 
 class App {
     constructor() {
@@ -24,6 +27,8 @@ class App {
         this.createCustomFile()
         this.createSwitcher()
         this.createCustomTags()
+        this.createRequests()
+        this.createMask()
     }
 
     createSlider = () => {
@@ -76,7 +81,7 @@ class App {
     }
 
     createFancyBox = () => {
-        Fancybox.bind('[data-fancybox]')
+        new CustomFancybox();
     }
 
     createCustomFile = () => {
@@ -107,6 +112,14 @@ class App {
         const customTags = document.querySelector('.custom-tags');
         if (!customTags) return;
         new CustomTags(customTags)
+    }
+
+    createRequests = () => {
+        new Requests();
+    }
+
+    createMask = () => {
+        new Mask()
     }
 }
 

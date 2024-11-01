@@ -58,6 +58,10 @@
   &__table {
     overflow-x: auto;
     min-height: 100vh;
+
+    &--slim {
+      min-height: 200px;
+    }
   }
 
   &__meta {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%= htmlWebpackPlugin.options.widgets.head %>
+<body>
+<%= htmlWebpackPlugin.options.widgets.headerLk %>
+<main class="main">
+    <section class="section">
+        <div class="lk">
+            <%= htmlWebpackPlugin.options.widgets.lkNav %>
+            <div class="lk-content">
+                <div class="lk-content__header">
+                    <div class="head head--lk">
+                        <h2 class="title">Аккаунты &gt; Иван Петров</h2>
+                        <div class="head__control">
+                            <a href="#" class="button button--slim button--transparent">Назад</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk-content__body">
+                    <div class="lk-content__meta mb-80">
+                        <a href="#" download class="button button--slim">Выгрузить</a>
+                    </div>
+                    <div class="lk-content__table lk-content__table--slim mb-68">
+                        <table class="table table--between">
+                            <thead class="table__header">
+                            <tr class="table__line">
+                                <th class="table__item table__item--head">Преподаватель</th>
+                                <th class="table__item table__item--head">Тема</th>
+                                <th class="table__item table__item--head">Дата создания</th>
+                                <th class="table__item table__item--head">Статус</th>
+                                <th class="table__item table__item--head">Тип</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table__body">
+                            <tr class="table__line">
+                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">Не следует, однако забывать</td>
+                                <td class="table__item">03.06.2024</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <%= htmlWebpackPlugin.options.widgets.chat %>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

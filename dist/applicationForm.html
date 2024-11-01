@@ -93,14 +93,14 @@
             </div>
             <div class="header__login">
                 <div class="login-block">
-                    <form action="/personal-cabinet/auth/" class="login-block__form login-form">
+                    <form action="https://russian-teacher.dnt-digital.ru/personal-cabinet/auth/" class="login-block__form login-form">
                         <label class="login-form__item">
-                            <input type="text" class="input input--small">
+                            <input type="text" class="input input--small" name="EMAIL" data-email>
                             <span>Электронная почта</span>
                         </label>
                         <label class="login-form__item">
                             <span class="password-block password-block--light">
-                                <input type="password" class="input input--small">
+                                <input type="password" class="input input--small" name="PASSWORD">
                                 <button class="password-block__btn" type="button">
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#icon-eye"></use>
@@ -112,7 +112,7 @@
                         </label>
                     </form>
                     <div class="login-block__login">
-                        <button class="button button--slim button--login" data-login-btn>Вход</button>
+                        <button class="button button--slim button--login" type="submit" data-login-btn>Вход</button>
                         <a href="#" class="text text--light">Не помню пароль</a>
                     </div>
                     <a href="#" class="login-block__register">Регистрация</a>
@@ -433,12 +433,12 @@
 </footer>
 
 <div class="hidden">
-    <div class="select-account" id="selectAccount">
+    <div class="select-account select-account--list" id="selectAccount">
         <form action="#" class="select-account__form">
             <div class="select-account__header">
                 <div class="select-account__meta">
                     <h3 class="select-account__title">Добавить преподавателя в список</h3>
-                    <button class="button button--short button--blue">Подтвердить</button>
+                    <button class="button button--short button--blue" type="submit">Подтвердить</button>
                 </div>
                 <div class="search">
                     <input type="search" placeholder="Поиск">
@@ -519,6 +519,29 @@
                             </svg>
                         </span>
                     </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="select-account" id="sign">
+        <form action="#" class="select-account__form">
+            <div class="select-account__header">
+                <div class="select-account__meta">
+                    <h3 class="select-account__title">Добавить преподавателя в список</h3>
+                    <button class="button button--short button--blue" type="submit">Подтвердить</button>
+                </div>
+            </div>
+            <div class="select-account__body">
+                <div class="form__item">
+                    <div class="file-block">
+                        <span class="file-block__text">Загрузить</span>
+                        <label class="button button--short">
+                            Выбрать файл
+                            <input type="file" hidden="">
+                        </label>
+                    </div>
+                    <span>Файл</span>
+                    <span class="form__error">Пожалуйста, введите имя</span>
                 </div>
             </div>
         </form>
@@ -605,6 +628,7 @@
             <a href="./404.html" class="temp__link">404</a>
             <a href="./lkTeachersModer.html" class="temp__link">Личный кабинет - Модератор - Преподаватели - Все</a>
             <a href="./lkAccountModer.html" class="temp__link">Личный кабинет - Модератор - Преподаватели - Просмотр</a>
+            <a href="./lkTeachersChat.html" class="temp__link">Личный кабинет - Преподаватели - Чат</a>
         </div>
     </div>
 </div>

@@ -5,6 +5,7 @@
   gap: 20px;
   width: fit-content;
   min-width: 318px;
+  max-width: 550px;
   padding: 14px 30px;
   border-radius: 25px;
   background-color: $grayLight;
@@ -41,6 +42,10 @@
   }
 
   &__size {
+    @include text($grayDark, $font-second);
+  }
+
+  &__comment {
     @include text($grayDark, $font-second);
   }
 }

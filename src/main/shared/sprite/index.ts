@@ -39,3 +39,5 @@ import './icon-accept.svg';
 import './icon-graph.svg';
 import './icon-notification.svg';
 import './icon-pencil.svg';
+import './icon-upload.svg';
+import './icon-enter.svg';

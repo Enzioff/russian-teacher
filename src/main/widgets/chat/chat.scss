@@ -1,0 +1,129 @@
+.chat-block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 664px;
+  border-top: 2px solid #B9D0FF;
+  background: linear-gradient(180deg, #F6F9FF 0%, #E1EBFE 100%);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../assets/images/pattern-bg.png");
+    background-size: 274px 294px;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    height: 100%;
+    max-height: 664px;
+    padding: 0 5px 115px 30px;
+
+    @include r($mobile) {
+      align-items: flex-start;
+      padding-left: 5px;
+      padding-bottom: 85px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 30px 0 0;
+    overflow-y: auto;
+    z-index: 1;
+
+    @include r($mobile) {
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 10px 0 0;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      padding: 0;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $blue;
+      border-radius: 20px;
+    }
+  }
+
+  &__meta {
+    position: absolute;
+    left: 50%;
+    bottom: 44px;
+    width: 782px;
+    background-color: $white;
+    border-radius: 25px;
+    transform: translateX(-50%);
+
+    @include r($mobile) {
+      bottom: 20px;
+      width: calc(100% - 20px);
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    padding: 4px 30px 5px;
+    z-index: 1;
+
+    input {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  &__button {
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    width: 46px;
+    height: 46px;
+  }
+
+  .message {
+    padding-bottom: 20px;
+    background-color: $gray;
+    border: 1px solid #E1EBFE;
+
+    @include r($mobile) {
+      padding-bottom: 28px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+    }
+
+    &--light {
+      align-self: flex-start;
+      background-color: $white;
+    }
+  }
+}
