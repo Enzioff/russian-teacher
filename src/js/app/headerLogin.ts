@@ -13,7 +13,7 @@ class HeaderLogin {
 
     init() {
         this.activeLoginBlock()
-        window.addEventListener('click', this.closeLoginForm.bind(this))
+        window.addEventListener('click', (evt) => this.closeLoginForm(evt))
     }
 
     getLoginBlockStatus = () => {
@@ -21,15 +21,25 @@ class HeaderLogin {
     }
 
     activeLoginBlock = () => {
-        this.btn.addEventListener('click', () => {
-            if (!this.getLoginBlockStatus()) {
-                this.loginBlock.classList.add(this.activeClass)
-            }
-        })
+        if (this.btn) {
+            this.btn.addEventListener('click', () => {
+                if (!this.getLoginBlockStatus()) {
+                    setTimeout(() => {
+                        this.btn.setAttribute('data-login-btn-in', '');
+                    }, 200)
+                    this.loginBlock.classList.add(this.activeClass)
+                }
+            })
+        }
     }
     closeLoginForm = (evt: MouseEvent) => {
         if (!this.loginBlock.contains(evt.target as Node)) {
             this.loginBlock.classList.remove(this.activeClass);
+            if (this.btn) {
+                if (this.btn.hasAttribute('data-login-btn-in')) {
+                    this.btn.removeAttribute('data-login-btn-in');
+                }
+            }
         }
     }
 }

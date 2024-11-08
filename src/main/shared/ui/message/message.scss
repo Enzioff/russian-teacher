@@ -14,8 +14,20 @@
     width: 100%;
   }
 
+  &__file {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
   &__picture {
     display: flex;
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
   }
 
   &__time {

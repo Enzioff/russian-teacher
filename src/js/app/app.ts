@@ -4,12 +4,12 @@ import Password from "./password";
 import CustomSelect from "./customSelect";
 import HeaderLogin from "./headerLogin";
 import UpdateUserPhoto from "./updateUserPhoto";
-import {Fancybox} from "@fancyapps/ui";
 import CustomFile from "./customFile";
 import CustomTags from "./customTags";
 import Requests from "./requests";
 import Mask from "./mask";
 import CustomFancybox from "./Fancybox";
+import Chat from "./Chat";
 
 class App {
     constructor() {
@@ -29,6 +29,7 @@ class App {
         this.createCustomTags()
         this.createRequests()
         this.createMask()
+        this.createChat()
     }
 
     createSlider = () => {
@@ -36,6 +37,14 @@ class App {
         if (!sliders) return
         sliders.forEach(slider => {
             new Slider(slider)
+        })
+    }
+
+    createRequests = () => {
+        const forms = document.querySelectorAll('[data-form]');
+        if (!forms) return;
+        forms.forEach((form: HTMLFormElement) => {
+            new Requests(form);
         })
     }
 
@@ -68,10 +77,12 @@ class App {
     }
 
     createHeaderLogin = () => {
-        const loginBtn = document.querySelector('.login-block');
-        if (!loginBtn) return
+        const loginBlocks = document.querySelectorAll('.login-block');
+        if (!loginBlocks) return
 
-        new HeaderLogin(loginBtn)
+        loginBlocks.forEach(loginBlock => {
+            new HeaderLogin(loginBlock)
+        })
     }
 
     createUpdateUserPhoto = () => {
@@ -114,12 +125,14 @@ class App {
         new CustomTags(customTags)
     }
 
-    createRequests = () => {
-        new Requests();
-    }
-
     createMask = () => {
         new Mask()
+    }
+
+    createChat = () => {
+        const chatBlock = document.querySelector('.chat-block');
+        if (!chatBlock) return;
+        new Chat(chatBlock)
     }
 }
 

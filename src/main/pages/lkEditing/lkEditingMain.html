@@ -27,7 +27,7 @@
                         <fieldset class="form__wrapper form__wrapper--offset-big">
                             <h3 class="title title--small">Баннер №1</h3>
                             <label class="form__item">
-                                <input type="text" class="input" placeholder="Введите заголовок">
+                                <input type="text" class="input" name="TITLE" placeholder="Введите заголовок">
                                 <span>Заголовок</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </label>
@@ -36,14 +36,14 @@
                                     <span class="file-block__text">Выберите файл</span>
                                     <label class="button button--short">
                                         Выбрать файл
-                                        <input type="file" hidden>
+                                        <input type="file" name="FILE" hidden>
                                     </label>
                                 </div>
                                 <span>Изображение</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </div>
                             <label class="form__item">
-                                <input type="text" class="input" placeholder="http://">
+                                <input type="text" class="input" name="URL" placeholder="http://">
                                 <span>Ссылка</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </label>
@@ -51,7 +51,7 @@
                         <fieldset class="form__wrapper form__wrapper--offset-big">
                             <h3 class="title title--small">Баннер №2</h3>
                             <label class="form__item">
-                                <input type="text" class="input" placeholder="Введите заголовок">
+                                <input type="text" class="input" name="TITLE" placeholder="Введите заголовок">
                                 <span>Заголовок</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </label>
@@ -60,20 +60,20 @@
                                     <span class="file-block__text">Выберите файл</span>
                                     <label class="button button--short">
                                         Выбрать файл
-                                        <input type="file" hidden>
+                                        <input type="file" name="FILE" hidden>
                                     </label>
                                 </div>
                                 <span>Изображение</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </div>
                             <label class="form__item">
-                                <input type="text" class="input" placeholder="http://">
+                                <input type="text" class="input" name="URL" placeholder="http://">
                                 <span>Ссылка</span>
                                 <span class="form__error">Пожалуйста, введите имя</span>
                             </label>
                         </fieldset>
                         <div class="form__control">
-                            <button class="button button--slim button--green">Сохранить</button>
+                            <button class="button button--slim button--green" type="submit">Сохранить</button>
                         </div>
                     </form>
                 </div>

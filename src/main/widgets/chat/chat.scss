@@ -1,8 +1,7 @@
 .chat-block {
   position: relative;
   width: 100%;
-  height: 100%;
-  max-height: 664px;
+  height: 664px;
   border-top: 2px solid #B9D0FF;
   background: linear-gradient(180deg, #F6F9FF 0%, #E1EBFE 100%);
   &::before {
@@ -46,6 +45,7 @@
     padding: 30px 30px 0 0;
     overflow-y: auto;
     z-index: 1;
+    scroll-snap-align: start;
 
     @include r($mobile) {
       align-items: flex-start;
@@ -101,6 +101,10 @@
   
   &__button {
     cursor: pointer;
+
+    input {
+      display: none;
+    }
   }
 
   &__icon {

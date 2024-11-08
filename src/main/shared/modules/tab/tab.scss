@@ -1,0 +1,33 @@
+.tab {
+  display: none;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+.lk-teaching__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .lk-content__outer-right {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+.stage {
+  display: none;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
+}

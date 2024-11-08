@@ -79,14 +79,15 @@
             </div>
             <div class="header__login">
                 <div class="login-block">
-                    <form action="https://russian-teacher.dnt-digital.ru/personal-cabinet/auth/" class="login-block__form login-form">
+                    <form action="https://russian-teacher.dnt-digital.ru/personal-cabinet/auth/" data-form class="login-block__form login-form">
                         <label class="login-form__item">
-                            <input type="text" class="input input--small" name="EMAIL" data-email>
+                            <input type="text" class="input input--small" name="EMAIL" data-email required>
                             <span>Электронная почта</span>
+                            <span class="form__error">Неправильный формат электронной почты</span>
                         </label>
                         <label class="login-form__item">
                             <span class="password-block password-block--light">
-                                <input type="password" class="input input--small" name="PASSWORD">
+                                <input type="password" class="input input--small" name="PASSWORD" required>
                                 <button class="password-block__btn" type="button">
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#icon-eye"></use>
@@ -94,6 +95,7 @@
                                     </svg>
                                 </button>
                                 <span>Пароль</span>
+                                <span class="form__error">Неправильный пароль</span>
                             </span>
                         </label>
                     </form>
@@ -108,26 +110,28 @@
     </div>
     <div class="mobile-menu">
         <div class="login-block">
-            <form action="#" class="login-block__form login-form">
+            <form action="https://russian-teacher.dnt-digital.ru/personal-cabinet/auth/" data-form class="login-block__form login-form">
                 <label class="login-form__item">
-                    <input type="text" class="input input--small">
+                    <input type="text" class="input input--small" name="EMAIL" data-email required>
                     <span>Электронная почта</span>
+                    <span class="form__error">Неправильный формат электронной почты</span>
                 </label>
                 <label class="login-form__item">
                             <span class="password-block password-block--light">
-                                <input type="password" class="input input--small">
+                                <input type="password" class="input input--small" name="PASSWORD" required>
                                 <button class="password-block__btn" type="button">
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#icon-eye"></use>
                                         <use hidden xlink:href="./assets/sprite.svg#icon-eye-close"></use>
                                     </svg>
                                 </button>
+                                <span>Пароль</span>
+                                <span class="form__error">Неправильный пароль</span>
                             </span>
-                    <span>Пароль</span>
                 </label>
             </form>
             <div class="login-block__login">
-                <button class="button button--slim button--login">Вход</button>
+                <button class="button button--slim button--login" type="submit" data-login-btn>Вход</button>
                 <a href="#" class="text text--light">Не помню пароль</a>
             </div>
             <a href="#" class="login-block__register">Регистрация</a>

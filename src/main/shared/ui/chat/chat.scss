@@ -18,6 +18,9 @@
     .chat__icon {
       fill: $white;
     }
+    .chat__note {
+      display: flex !important;
+    }
   }
 
   &--close {
@@ -30,7 +33,7 @@
     position: absolute;
     top: -4px;
     left: -4px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     min-width: 17px;

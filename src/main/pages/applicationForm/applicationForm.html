@@ -16,32 +16,32 @@
                     </div>
                     <form class="form">
                         <label class="form__item">
-                            <input type="email" class="input">
+                            <input type="text" name="FIO" class="input">
                             <span>ФИО</span>
                             <span class="form__error">Неправильный формат электронной почты</span>
                         </label>
                         <label class="form__item">
-                            <input type="date" class="input">
+                            <input type="date" name="DATE" class="input">
                             <span>Дата рождения</span>
                             <span class="form__error">Пожалуйста, введите фамилию</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" name="CITY" class="input">
                             <span>Регион, город проживания</span>
                             <span class="form__error">Пожалуйста, введите имя</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" name="CITIZEN" class="input">
                             <span>Гражданство</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <label class="form__item">
-                            <input type="tel" class="input">
+                            <input type="tel" name="TEL" class="input">
                             <span>Номер телефона</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <label class="form__item">
-                            <input type="text" class="input">
+                            <input type="text" name="FEEDBACK" class="input">
                             <span>Откуда Вы узнали о проекте?</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
@@ -89,26 +89,26 @@
                         <label class="form__item">
                             <small>пожалуйста, укажите язык и уровень владения. Например: английский язык C1, испанский
                                 язык B2 и т.д.</small>
-                            <textarea class="input input--area"></textarea>
+                            <textarea class="input input--area" name="LANGUAGE"></textarea>
                             <span>Знание иностранных языков</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <div class="form__wrapper">
                             <label class="form__item form__item--block">
-                                <input type="checkbox" class="checkbox">
+                                <input type="checkbox" class="checkbox" name="POLICY" data-agree>
                                 <span>
                                 Ознакомлен(а) с <a href="#">требованиями</a> к учителям-участникам гуманитарного проекта «Российский
                                 учитель за рубежом»
                             </span>
                             </label>
                             <label class="form__item form__item--block">
-                                <input type="checkbox" class="checkbox">
+                                <input type="checkbox" class="checkbox" name="POLICY_ACCEPT" data-agree>
                                 <span>
                                 Подтверждаю своё согласие с <a href="#">Политикой обработки персональных данных</a>
                             </span>
                             </label>
                         </div>
-                        <button class="form__button button button--slim">Сформировать</button>
+                        <button class="form__button button button--slim" type="submit">Сформировать</button>
                     </form>
                 </div>
                 <div class="columns__col-12 columns__col-mob-4">
@@ -156,13 +156,13 @@
                                             <p class="download__size">2 Мб макс.</p>
                                             <label class="button button--purple button--slim">
                                                 <span>Выбрать файл(ы)</span>
-                                                <input type="file" hidden="" accept=".png, .jpg, .jpeg">
+                                                <input type="file" hidden="" name="FILE" accept=".png, .jpg, .jpeg">
                                             </label>
                                         </div>
                                     </div>
                                     <div class="article-doc__download-block download">
                                         <div class="download__info">
-                                            <button class="button button--slim">Загрузить</button>
+                                            <button class="button button--slim" type="submit">Загрузить</button>
                                         </div>
                                     </div>
                                 </form>

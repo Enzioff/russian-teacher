@@ -2,21 +2,22 @@ import {Fancybox} from "@fancyapps/ui";
 import axios from "axios";
 
 interface peopleData {
-    id: number,
-    name: string,
-    src: string
+    PERSONAL_PHOTO: string,
+    NAME: string,
+    LAST_NAME: string,
+    ID: string,
 }
 
 class CustomFancybox {
     getPeopleListUrl;
     sendPeopleListUrl;
+
     constructor() {
-        this.sendPeopleListUrl = '/local/ajax/add_teacher_to_me.php'
-        this.getPeopleListUrl = '/local/ajax/get_free_teachers_test.php/'
+        this.sendPeopleListUrl = '/local/ajax/actions_core.php'
+        this.getPeopleListUrl = '/local/ajax/get_free_teachers.php/'
 
         this.init()
     }
-
 
     init() {
         Fancybox.bind('[data-fancybox]', {
@@ -24,51 +25,85 @@ class CustomFancybox {
                 init: () => {
                     const peopleList = document.querySelector('.select-account--list')
                     if (!peopleList) return
+                    const form = peopleList.querySelector('form')
+                    const submitForm = form.querySelector('button[type="submit"]')
                     const container = peopleList.querySelector('.select-account__list')
 
                     this.getPeopleList(container)
-                }
+
+                    submitForm.addEventListener('click', (evt) => {
+                        evt.preventDefault()
+                        evt.stopPropagation()
+
+                        this.sendData(form)
+                    })
+                },
             }
         })
     }
 
     getPeopleList = (container: Element) => {
-        axios.get('')
+        axios.get(`${this.getPeopleListUrl}?action=get_free_teachers`)
             .then(response => response.data)
             .then(data => {
-                console.log(data)
+                const successData = data.data;
+                if (!successData) return
+                container.innerHTML = '';
+                const content = JSON.parse(successData.content)
+                content.forEach((element: peopleData) => {
+                    if (element) {
+                        container.insertAdjacentHTML('beforeend', this.peopleTemplate(element))
+                    }
+                })
             })
             .catch(error => console.error(error))
-
-        const tempData: peopleData[]  = []
-        tempData.forEach(data => {
-            if (data) {
-                container.insertAdjacentHTML('beforeend', this.peopleTemplate(data))
-            }
-        })
     }
 
     peopleTemplate = (data: peopleData) => {
         const {
-            src,
-            name,
-            id,
+            PERSONAL_PHOTO,
+            NAME,
+            LAST_NAME,
+            ID,
         } = data;
 
         return `
             <label class="select-account__item">
-                <input type="checkbox" hidden="" name="ID" value="${id}" tabindex="-1">
+                <input type="checkbox" hidden="" name="ID" value="${ID}" tabindex="-1">
                 <span class="select-account__info">
                     <picture class="select-account__picture">
-                        <img src="${src}" alt="">
+                        <img src="${PERSONAL_PHOTO}" alt="">
                     </picture>
-                    <span>${name}</span>
+                    <span>${NAME} ${LAST_NAME}</span>
                     <svg class="select-account__icon">
-                        <use xlink:href="./assets/sprite.svg#icon-accept"></use>
+                        <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-accept"></use>
                     </svg>
                 </span>
             </label>
         `
+    }
+
+    sendData = (form: HTMLElement) => {
+        const data = new FormData();
+        const inputs = form.querySelectorAll('input')
+        const url = form.getAttribute('action')
+        const idsArray: string[] = [];
+
+        inputs.forEach(input => {
+            if (input.type === 'checkbox') {
+                if (input.checked) {
+                    idsArray.push(input.value)
+                }
+            }
+        })
+
+        if (idsArray && idsArray.length >= 1) {
+            data.append('userIDs', JSON.stringify(idsArray))
+            axios.post(url, data)
+                .then(response => response.data)
+                .then(data => console.log(data))
+                .catch(error => console.error(error))
+        }
     }
 }
 

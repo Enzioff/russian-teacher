@@ -21,6 +21,10 @@
     text-align: center;
     color: $white;
     border-bottom: 1px solid $white;
+
+    @include r($mobile) {
+      padding-top: 40px;
+    }
   }
 
   &__login {
@@ -36,6 +40,10 @@
     width: 100%;
     padding-left: 35px;
     padding-bottom: 0;
+
+    @include r($mobile) {
+      padding-left: 0;
+    }
 
     .login-block__login {
       flex-direction: row;

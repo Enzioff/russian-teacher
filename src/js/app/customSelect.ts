@@ -4,6 +4,7 @@ class CustomSelect {
     elements;
     current;
     selects;
+    input;
 
     constructor(el: Element) {
         this.el = el;
@@ -11,6 +12,7 @@ class CustomSelect {
         this.elements = this.el.querySelectorAll('.select__item');
         this.current = this.headerEl.querySelector('.select__current')
         this.selects = document.querySelectorAll('.select');
+        this.input = this.el.querySelector('input');
 
         this.init();
     }
@@ -23,7 +25,24 @@ class CustomSelect {
             el.addEventListener('click', () => {
                 this.toggleDropdown();
                 this.headerEl.setAttribute('data-current-value', el.getAttribute('data-value'))
-                this.current.textContent = el.textContent
+                this.current.textContent = el.textContent;
+                if (this.input) {
+                    this.input.value = el.getAttribute('data-value');
+                }
+
+                const countrySelect = document.querySelector('[data-title="country_id"]')
+
+                if (countrySelect) {
+                    const parentEl: HTMLElement = countrySelect.closest('.form__item');
+
+                    if (el.getAttribute('data-value') === 'country_teacher') {
+                        if (parentEl.classList.contains('hidden')) {
+                            parentEl.classList.remove('hidden')
+                        }
+                    } else if (parentEl.contains(el)) {
+                        parentEl.classList.remove('hidden')
+                    }
+                }
             })
         })
     }

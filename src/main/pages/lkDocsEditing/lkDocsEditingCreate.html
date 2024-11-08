@@ -17,7 +17,7 @@
                 <div class="lk-content__body">
                     <form class="form">
                         <label class="form__item">
-                            <input type="text" class="input" placeholder="Введите заголовок">
+                            <input type="text" class="input" name="TITLE" placeholder="Введите заголовок">
                             <span>Заголовок</span>
                             <span class="form__error">Пожалуйста, введите тему</span>
                         </label>
@@ -42,7 +42,7 @@
                             <span class="form__error">Неправильный формат</span>
                         </label>
                         <label class="form__item">
-                            <textarea class="input input--area"></textarea>
+                            <textarea class="input input--area" name="DESCRIPTION"></textarea>
                             <span>Описание</span>
                             <span class="form__error">Неправильный формат</span>
                         </label>
@@ -51,14 +51,14 @@
                                 <span class="file-block__text">Выберите файл</span>
                                 <label class="button button--short">
                                     Загрузить
-                                    <input type="file" hidden>
+                                    <input type="file" name="FILE" hidden>
                                 </label>
                             </div>
                             <span>Файл</span>
                             <span class="form__error">Пожалуйста, введите имя</span>
                         </div>
                         <div class="form__control">
-                            <button class="button button--slim">Создать</button>
+                            <button class="button button--slim" type="submit">Создать</button>
                         </div>
                     </form>
                 </div>

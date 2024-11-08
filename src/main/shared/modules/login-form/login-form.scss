@@ -15,11 +15,8 @@
     }
 
     &.error {
-      span.error {
-        display: block;
-        color: $yellowSecond;
-        margin-bottom: -20px;
-        font-size: 12px;
+      .form__error {
+        height: auto;
       }
       input.input {
         border-color: red;
