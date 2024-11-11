@@ -10,6 +10,7 @@ import Requests from "./requests";
 import Mask from "./mask";
 import CustomFancybox from "./Fancybox";
 import Chat from "./Chat";
+import ShowHiddenLine from "./ShowHiddenLine";
 
 class App {
     constructor() {
@@ -30,6 +31,7 @@ class App {
         this.createRequests()
         this.createMask()
         this.createChat()
+        this.createShowHiddenLine()
     }
 
     createSlider = () => {
@@ -104,17 +106,24 @@ class App {
     }
 
     createSwitcher = () => {
-        const switcherList = document.querySelectorAll('[data-switcher]');
+        const switcherList = document.querySelectorAll('.switcher');
         if (!switcherList) return;
         switcherList.forEach(switcher => {
             const input = switcher.querySelector('input')
             const text = switcher.querySelector('[data-switcher-text]')
             input.addEventListener('change', () => {
                 if (input.checked) {
-                    text.textContent = 'Вкл.'
+                    input.value = 'Y'
+                    if (text) {
+                        text.textContent = 'Вкл.'
+                    }
                 } else {
-                    text.textContent = 'Выкл.'
+                    input.value = 'N'
+                    if (text) {
+                        text.textContent = 'Выкл.'
+                    }
                 }
+                console.log(input.value)
             })
         })
     }
@@ -133,6 +142,14 @@ class App {
         const chatBlock = document.querySelector('.chat-block');
         if (!chatBlock) return;
         new Chat(chatBlock)
+    }
+
+    createShowHiddenLine = () => {
+        const tables = document.querySelectorAll('.table');
+        if (!tables) return
+        tables.forEach(table => {
+            new ShowHiddenLine(table);
+        })
     }
 }
 

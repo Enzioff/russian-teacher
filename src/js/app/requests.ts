@@ -121,10 +121,12 @@ class Requests {
             .then(data => {
                 if (data?.success) {
                     if (data?.data) {
-                        window.location.href = data.data;
+                        window.location.replace(`https://${data.data}`);
                     } else {
                         window.location.reload()
                     }
+                } else {
+                    alert(data.message)
                 }
                 console.log(data)
             })
@@ -249,9 +251,8 @@ class Requests {
                     break;
                 case 'checkbox':
                     const parent = input.closest('.switcher');
-                    const currentInput = parent.querySelector('input')
                     if (parent) {
-                        console.log(input.name, currentInput.checked)
+                        const currentInput = parent.querySelector('input')
                         data.append(input.name, currentInput.checked ? 'Y' : 'N');
                     } else {
                         input = input as HTMLInputElement
@@ -272,11 +273,11 @@ class Requests {
                     break;
                 default:
                     if (customTags) {
-                        const tagsList = customTags.querySelectorAll('.tags');
-                        const tagsArray: string[] = [];
-                        tagsList.forEach(el => {
-                            tagsArray.push(el.textContent)
-                        })
+                        const tagsList = customTags.querySelector('.tags');
+                        if (!tagsList) return
+                        const tags = tagsList.querySelectorAll('.tags__item')
+                        const tagsArray: string[] = Array.from(tags).map(el => el.textContent.trim())
+
                         data.append(input.name, tagsArray.join(', '))
                     }
                     data.append(input.name, input.value);

@@ -32,7 +32,7 @@ class Chat {
         this.chatBlock = chatBlock
         this.sendAPI = '/local/ajax/send_message.php'
         this.getAPI = '/local/ajax/receive_message.php'
-        this.updateDelay = 30000
+        this.updateDelay = 5000
 
         this.sendForm = this.chatBlock.querySelector('.chat-block__form')
         this.sendButton = this.sendForm.querySelector('button[type="submit"]')

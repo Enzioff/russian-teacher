@@ -20,9 +20,6 @@ class customFile {
             const target = evt.target as HTMLInputElement;
 
             const file = target.files
-            if (!file) {
-                return false
-            }
 
             if (this.uploadList) {
                 Array.from(file).forEach(el => {
@@ -36,12 +33,30 @@ class customFile {
                         fr.readAsDataURL(el);
                     }
                 })
-                this.uploadInput.files = target.files;
+                this.addFiles(target.files)
             } else {
-                this.uploadInput.files = target.files;
+                this.addFiles(target.files)
                 this.text.textContent = this.uploadInput.files[0].name;
             }
         })
+
+        this.removeUploadFile()
+    }
+
+    addFiles = (newFiles: FileList) =>{
+        const existingFiles = this.uploadInput.files;
+
+        const allFiles = existingFiles ? Array.from(existingFiles) : [];
+
+        for (let i = 0; i < newFiles.length; i++) {
+            allFiles.push(newFiles[i]);
+        }
+
+        const dataTransfer = new DataTransfer();
+
+        allFiles.forEach(file => dataTransfer.items.add(file));
+
+        this.uploadInput.files = dataTransfer.files;
     }
 
     uploadPictureTemplate = (src: string, name: string) => {
@@ -57,16 +72,18 @@ class customFile {
 
     removeUploadFile = () => {
         // Удалять из input файл
-        const uploadFiles = this.uploadList.querySelectorAll('.uploaded-list__item');
-        if (!uploadFiles) return;
-        uploadFiles.forEach(uploadElement => {
-            const removeBtn = uploadElement.querySelector('.uploaded-list__remove');
-            const uploadElementName = uploadElement.getAttribute('data-name');
+        if (this.uploadList) {
+            const uploadFiles = this.uploadList.querySelectorAll('.uploaded-list__item');
+            if (!uploadFiles) return;
+            uploadFiles.forEach(uploadElement => {
+                const removeBtn = uploadElement.querySelector('.uploaded-list__remove');
+                const uploadElementName = uploadElement.getAttribute('data-name');
 
-            removeBtn.addEventListener('click', () => {
-                uploadElement.remove()
+                removeBtn.addEventListener('click', () => {
+                    uploadElement.remove()
+                })
             })
-        })
+        }
     }
 }
 

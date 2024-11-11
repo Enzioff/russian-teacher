@@ -96,6 +96,19 @@
     .table__item:first-child {
       text-align: center;
     }
+
+    &--info {
+      display: none;
+      .table__item:first-child {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+      }
+
+      &.visible {
+        display: table-row;
+      }
+    }
   }
 
   &__item {

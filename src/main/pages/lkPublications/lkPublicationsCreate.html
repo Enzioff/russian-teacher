@@ -18,7 +18,7 @@
                     <div class="tag mb-55">Новость / Анонс</div>
                     <!-- <div class="tag tag--red mb-55">Вебинар</div> -->
                     <!-- <div class="tag tag--green mb-55">Курсы</div> -->
-                    <form class="form">
+                    <form class="form" data-form>
                         <label class="form__item">
                             <input type="text" class="input" placeholder="Введите заголовок">
                             <span>Заголовок</span>
@@ -29,17 +29,17 @@
                                 <span class="file-block__text">Загрузить</span>
                                 <label class="button button--short">
                                     Выбрать файл
-                                    <input type="file" hidden multiple>
+                                    <input type="file" name="FILES" hidden multiple>
                                 </label>
                             </div>
                             <div class="uploaded-list">
                                 <!-- Генерация на стороне JS -->
-<!--                                <div class="uploaded-list__item">-->
-<!--                                    <picture class="uploaded-list__picture">-->
-<!--                                        <img src="./assets/images/pic-1.png" alt="">-->
-<!--                                    </picture>-->
-<!--                                    <button class="uploaded-list__remove" type="button">Удалить</button>-->
-<!--                                </div>-->
+                                <div class="uploaded-list__item">
+                                    <picture class="uploaded-list__picture">
+                                        <img src="./assets/images/pic-1.png" alt="">
+                                    </picture>
+                                    <button class="uploaded-list__remove" type="button">Удалить</button>
+                                </div>
                             </div>
                             <span>Изображения</span>
                             <span class="form__error">Пожалуйста, введите имя</span>
@@ -52,9 +52,10 @@
                         <label class="form__item">
                             <span class="custom-tags">
                                 <span class="tags">
-
+                                    <span class="tags__item">afwfaw</span>
+                                    <span class="tags__item">232323</span>
                                 </span>
-                                <input type="text" class="input" name="" placeholder="">
+                                <input type="text" class="input" name="TAGS" placeholder="">
                             </span>
                             <span>Теги</span>
                             <span class="form__error">Пожалуйста, введите теги</span>
