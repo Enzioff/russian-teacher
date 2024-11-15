@@ -84,6 +84,19 @@
       padding: 28px 20px;
       border-width: 2px;
       border-color: $blue;
+      max-height: 300px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 4px;
+        padding: 0;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 20px;
+      }
     }
 
     .select__icon {
