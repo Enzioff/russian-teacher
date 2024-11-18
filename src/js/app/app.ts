@@ -11,6 +11,7 @@ import Mask from "./mask";
 import CustomFancybox from "./Fancybox";
 import Chat from "./Chat";
 import ShowHiddenLine from "./ShowHiddenLine";
+import AsyncUpdate from "./AsyncUpdate";
 
 class App {
     constructor() {
@@ -32,6 +33,7 @@ class App {
         this.createMask()
         this.createChat()
         this.createShowHiddenLine()
+        this.createAsyncUpdate()
     }
 
     createSlider = () => {
@@ -149,6 +151,16 @@ class App {
         if (!tables) return
         tables.forEach(table => {
             new ShowHiddenLine(table);
+        })
+    }
+    
+    createAsyncUpdate = () => {
+        const asyncSelects = document.querySelectorAll('[data-select-async]');
+        
+        if (!asyncSelects) return;
+        
+        asyncSelects.forEach(element => {
+            new AsyncUpdate(element);
         })
     }
 }

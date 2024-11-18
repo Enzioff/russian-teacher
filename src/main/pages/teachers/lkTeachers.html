@@ -12,21 +12,49 @@
                     <div class="head head--lk head--lk-column">
                         <h2 class="title">Преподаватели</h2>
                         <div class="head__control">
-                            <a href="#" class="button button--blue" data-fancybox data-src="#selectAccount">Добавить в список</a>
+                            <a href="#" class="button button--blue" data-fancybox data-src="#selectAccount">Добавить в
+                                список</a>
                             <a href="#" class="button button--blue">Создать нового</a>
-                            <div class="select select--center select--middle" data-select="">
-                                <span class="select__header" data-title="ACCOUNT_TYPE">
-                                    <span class="select__current">Страна</span>
+                            <div class="select select--center select--middle" data-select="" data-select-async>
+                                <span class="select__header" data-title="ACCOUNT_TYPE" data-current-value="98">
+                                    <span class="select__current">Вьетнам</span>
                                     <svg class="select__icon">
-                                        <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
+                                        <use
+                                            xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-arrow"></use>
                                     </svg>
                                 </span>
                                 <span class="select__content">
-                                    <span class="select__item" data-value="Admin">Администратор</span>
-                                    <span class="select__item" data-value="Moder_1">Модератор Тип: 1</span>
-                                    <span class="select__item" data-value="Moder_2">Модератор Тип: 2</span>
-                                    <span class="select__item" data-value="Moder_3">Модератор Тип: 3</span>
-                                    <span class="select__item" data-value="Psycho">Психолог</span>
+                                        <span class="select__item" data-value="74">Россия</span>
+                                        <span class="select__item" data-value="75">Беларусь</span>
+                                        <span class="select__item" data-value="91">Китай</span>
+                                        <span class="select__item" data-value="92">Египет</span>
+                                        <span class="select__item" data-value="93">Таджикистан</span>
+                                        <span class="select__item" data-value="94">ОАЭ</span>
+                                        <span class="select__item" data-value="95">Турция</span>
+                                        <span class="select__item" data-value="96">Монголия</span>
+                                        <span class="select__item" data-value="97">Сербия</span>
+                                        <span class="select__item" data-value="98">Вьетнам</span>
+                                        <span class="select__item" data-value="99">Лаос</span>
+                                        <span class="select__item" data-value="100">Киргизия</span>
+                                        <span class="select__item" data-value="101">Узбекистан</span>
+                                        <span class="select__item" data-value="102">Ливан</span>
+                                        <span class="select__item" data-value="103">Эфиопия</span>
+                                        <span class="select__item" data-value="104">Алжир</span>
+                                        <span class="select__item" data-value="105">Индия</span>
+                                        <span class="select__item" data-value="106">Джибути</span>
+                                        <span class="select__item" data-value="107">Венесуэла</span>
+                                        <span class="select__item" data-value="108">Никарагуа</span>
+                                        <span class="select__item" data-value="109">Куба</span>
+                                        <span class="select__item" data-value="110">Пакистан</span>
+                                        <span class="select__item" data-value="111">Южная Осетия</span>
+                                        <span class="select__item" data-value="112">Абхазия</span>
+                                        <span class="select__item" data-value="113">Палестина</span>
+                                        <span class="select__item" data-value="114">Саудовская Аравия</span>
+                                        <span class="select__item" data-value="115">Камерун</span>
+                                        <span class="select__item" data-value="116">Сирия</span>
+                                        <span class="select__item" data-value="117">Бенин</span>
+                                        <span class="select__item" data-value="118">Нигерия</span>
+                                        <span class="select__item" data-value="119">Армения</span>
                                 </span>
                             </div>
                         </div>
@@ -47,7 +75,7 @@
                 </div>
                 <div class="lk-content__body">
                     <div class="lk-content__table">
-                        <table class="table table--center table--between">
+                        <table class="table table--control">
                             <thead class="table__header">
                             <tr class="table__line">
                                 <th class="table__item table__item--head">ID</th>
@@ -59,20 +87,22 @@
                                 <th class="table__item table__item--head">Удалить аккаунт</th>
                             </tr>
                             </thead>
-                            <tbody class="table__body">
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tbody class="table__body" data-async>
+                            <tr class="table__line" data-country="74">
+                                <td class="table__item">9</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=9">Артем Фролов</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">RU</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -80,35 +110,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>28</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">Евгений Кормилицын</td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="9">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="74">
+                                <td class="table__item">12</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=12">Тест Тест</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">RU</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -116,35 +153,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">Евгений Кормилицын</td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="12">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="74">
+                                <td class="table__item">31</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=31">Тест Тест</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">RU</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -152,35 +196,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>6</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item">Евгений Кормилицын</td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="31">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="74">
+                                <td class="table__item">32</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=32">Тестовый учитель Тестовый учитель</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">RU</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -188,35 +239,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item"></td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="32">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="91">
+                                <td class="table__item">45</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=45">Алексей Болот</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">CN</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -224,35 +282,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item"></td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="45">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="91">
+                                <td class="table__item">46</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=46">Елена Гранкина</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">CN</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -260,35 +325,43 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item"></td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="46">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="92">
+                                <td class="table__item">47</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img
+                                            src="/upload/main/cb0/l1nsgjirvpipvc2u2gyl22dw3aq24ggx/photo_2023_10_02_10_08_42.jpg"
+                                            alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=47">Наталья Гудкова</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">EG</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -296,35 +369,42 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item"></td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="47">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
                                 </td>
                             </tr>
-                            <tr class="table__line">
-                                <td class="table__item">0007</td>
+                            <tr class="table__line" data-country="92">
+                                <td class="table__item">48</td>
                                 <td class="table__item table__item--row">
-                                    <picture class="avatar avatar--admin">
-                                        <img src="./assets/images/user-1.png" alt="">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
                                     </picture>
-                                    <span>Валентин Карпов</span>
+                                    <a href="./detail/?id=48">Александра Плаксина</a>
                                 </td>
-                                <td class="table__item">AM</td>
+                                <td class="table__item">EG</td>
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-message"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
                                         </svg>
                                         <span>0</span>
                                     </div>
@@ -332,17 +412,965 @@
                                 <td class="table__item">
                                     <div class="table__info">
                                         <svg>
-                                            <use xlink:href="./assets/sprite.svg#icon-doc-3"></use>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
                                         </svg>
-                                        <span>2</span>
+                                        <span>0</span>
                                     </div>
                                 </td>
-                                <td class="table__item">Иван Петров</td>
+                                <td class="table__item"></td>
                                 <td class="table__item">
-                                    <form action="#" class="remove-form">
-                                        <button class="remove-form__button">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="48">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
                                             <svg class="icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-remove"></use>
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="93">
+                                <td class="table__item">49</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=49">Данила Тикунов</a>
+                                </td>
+                                <td class="table__item">TJ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="49">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="93">
+                                <td class="table__item">50</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=50">Марина Трунова</a>
+                                </td>
+                                <td class="table__item">TJ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="50">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="93">
+                                <td class="table__item">51</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img
+                                            src="/upload/main/211/glb7i1z43d9vbslovca6lsk5l8pa6006/foto-_-kopiya-_2_.jpeg"
+                                            alt="">
+                                    </picture>
+                                    <a href="./detail/?id=51">Светлана Юсупова</a>
+                                </td>
+                                <td class="table__item">TJ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="51">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="94">
+                                <td class="table__item">52</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=52">Андрей Сапрыкин</a>
+                                </td>
+                                <td class="table__item">AE</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="52">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="94">
+                                <td class="table__item">53</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=53">Кристина Морозова</a>
+                                </td>
+                                <td class="table__item">AE</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="53">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="95">
+                                <td class="table__item">54</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=54">Карина Богосьян</a>
+                                </td>
+                                <td class="table__item">TR</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="54">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="95">
+                                <td class="table__item">55</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=55">Ирина Старцева</a>
+                                </td>
+                                <td class="table__item">TR</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="55">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="96">
+                                <td class="table__item">56</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=56">Туяна Чимитова</a>
+                                </td>
+                                <td class="table__item">MN</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="56">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="96">
+                                <td class="table__item">57</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img
+                                            src="/upload/main/5e1/c1tkm7mbkza5na191o67axhudl795ktk/uYGfw6tcAjQL1Hbtb7yHWQDWKLcrwMadXzeXeVdlGf4othRCbak3t9po_zbSYHoRFQTyowzTmbw2xyvQr6y7_I1h.jpg"
+                                            alt="">
+                                    </picture>
+                                    <a href="./detail/?id=57">Марина Цыдыпова</a>
+                                </td>
+                                <td class="table__item">MN</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="57">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="97">
+                                <td class="table__item">58</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/dcf/vsli4mx2emb8smswxiaa0073el7mupmm/Novikova-2.jpg"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=58">Полина Новикова</a>
+                                </td>
+                                <td class="table__item">RS</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="58">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="97">
+                                <td class="table__item">59</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=59">Татьяна Галактионова</a>
+                                </td>
+                                <td class="table__item">RS</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="59">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="98">
+                                <td class="table__item">60</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=60">Валентина Ким</a>
+                                </td>
+                                <td class="table__item">VN</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="60">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="98">
+                                <td class="table__item">61</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=61">Эльвира Денисова</a>
+                                </td>
+                                <td class="table__item">VN</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="61">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="99">
+                                <td class="table__item">62</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=62">Анастасия Удодик</a>
+                                </td>
+                                <td class="table__item">LA</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="62">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="100">
+                                <td class="table__item">63</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img
+                                            src="/upload/main/3dc/ird42cajh28fkipaudnsyq2p5cinylvi/6DACB433_7C36_4447_A393_7EE34E96FD52.jpg"
+                                            alt="">
+                                    </picture>
+                                    <a href="./detail/?id=63">Александр Стрелковский</a>
+                                </td>
+                                <td class="table__item">KG</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="63">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="100">
+                                <td class="table__item">64</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="/upload/main/7bd/g8rl46fa67sw10nc6aqkaf8dcwmiwrx8/Group_30.png"
+                                             alt="">
+                                    </picture>
+                                    <a href="./detail/?id=64">Ольга Ефремова</a>
+                                </td>
+                                <td class="table__item">KG</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="64">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="112">
+                                <td class="table__item">84</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=84">test@diez.io test@diez.io</a>
+                                </td>
+                                <td class="table__item">AB</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="84">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="101">
+                                <td class="table__item">85</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=85">Виктория Литвин</a>
+                                </td>
+                                <td class="table__item">UZ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="85">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="101">
+                                <td class="table__item">86</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=86">Фёдор Рыбаков</a>
+                                </td>
+                                <td class="table__item">UZ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="86">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="103">
+                                <td class="table__item">88</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=88">Екатерина Ткаченко</a>
+                                </td>
+                                <td class="table__item">ET</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="88">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="106">
+                                <td class="table__item">89</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=89">test test</a>
+                                </td>
+                                <td class="table__item">DJ</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="89">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr class="table__line" data-country="112">
+                                <td class="table__item">99</td>
+                                <td class="table__item table__item--row">
+                                    <picture class="avatar ">
+                                        <img src="" alt="">
+                                    </picture>
+                                    <a href="./detail/?id=99">backedge2016@gmail.com backedge2016@gmail.com</a>
+                                </td>
+                                <td class="table__item">AB</td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-message"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item">
+                                    <div class="table__info">
+                                        <svg>
+                                            <use
+                                                xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-doc-3"></use>
+                                        </svg>
+                                        <span>0</span>
+                                    </div>
+                                </td>
+                                <td class="table__item"></td>
+                                <td class="table__item">
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="remove-form"
+                                          data-form="">
+                                        <input type="hidden" name="user_id" value="99">
+                                        <input type="hidden" name="action" value="delete_user">
+                                        <button type="submit" class="remove-form__button">
+                                            <svg class="icon">
+                                                <use
+                                                    xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-remove"></use>
                                             </svg>
                                         </button>
                                     </form>
