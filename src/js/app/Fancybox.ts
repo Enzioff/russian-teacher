@@ -43,14 +43,14 @@ class CustomFancybox {
     }
 
     getPeopleList = (container: Element) => {
-        axios.get(`${this.getPeopleListUrl}?action=get_free_teachers`)
+        axios.get(`${this.sendPeopleListUrl}?action=get_free_teachers`)
             .then(response => response.data)
             .then(data => {
                 const successData = data.data;
                 if (!successData) return
                 container.innerHTML = '';
-                const content = JSON.parse(successData.content)
-                content.forEach((element: peopleData) => {
+                successData.forEach((element: peopleData) => {
+                    console.log(element)
                     if (element) {
                         container.insertAdjacentHTML('beforeend', this.peopleTemplate(element))
                     }
@@ -98,10 +98,16 @@ class CustomFancybox {
         })
 
         if (idsArray && idsArray.length >= 1) {
-            data.append('userIDs', JSON.stringify(idsArray))
+            data.append('user_ids', JSON.stringify(idsArray))
+            data.append('action', 'add_teachers_to_me')
             axios.post(url, data)
                 .then(response => response.data)
-                .then(data => console.log(data))
+                .then(data => {
+                    console.log(data)
+                    if (data.success) {
+                        window.location.reload();
+                    }
+                })
                 .catch(error => console.error(error))
         }
     }

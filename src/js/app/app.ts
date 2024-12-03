@@ -12,6 +12,7 @@ import CustomFancybox from "./Fancybox";
 import Chat from "./Chat";
 import ShowHiddenLine from "./ShowHiddenLine";
 import AsyncUpdate from "./AsyncUpdate";
+import AsyncForm from "./AsyncForm";
 
 class App {
     constructor() {
@@ -34,6 +35,7 @@ class App {
         this.createChat()
         this.createShowHiddenLine()
         this.createAsyncUpdate()
+        this.createAsyncForm()
     }
 
     createSlider = () => {
@@ -161,6 +163,16 @@ class App {
         
         asyncSelects.forEach(element => {
             new AsyncUpdate(element);
+        })
+    }
+    
+    createAsyncForm = () => {
+        const forms = document.querySelectorAll('[data-form-async]')
+        
+        if (!forms) return;
+        
+        forms.forEach(form => {
+            new AsyncForm(form);
         })
     }
 }

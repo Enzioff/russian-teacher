@@ -5,6 +5,7 @@ class AsyncUpdate {
     elements;
     searchForm;
     filteredEls: Element[];
+    searchStr: string;
     
     constructor(select: Element) {
         this.select = select;
@@ -13,6 +14,7 @@ class AsyncUpdate {
         if (this.container) {
             this.elements = this.container.querySelectorAll('.table__line');
         }
+        
         this.searchForm = document.querySelector('.search')
         
         this.init()
@@ -40,21 +42,53 @@ class AsyncUpdate {
     }
     
     update = (newValue: string) => {
+        const selects = document.querySelectorAll('.select__header');
+        if (selects && selects.length > 1) {
+            if (selects[0].getAttribute('data-current-value').length > 0 && selects[1].getAttribute('data-current-value').length <= 0) {
+                this.searchStr = selects[0].getAttribute('data-current-value')
+            } else if (selects[0].getAttribute('data-current-value').length <= 0 && selects[1].getAttribute('data-current-value').length > 0) {
+                this.searchStr = selects[1].getAttribute('data-current-value')
+            } else {
+                this.searchStr = `${selects[1].getAttribute('data-current-value')}.${selects[0].getAttribute('data-current-value')}`
+            }
+        }
+        
         if (this.elements) {
             this.elements.forEach(el => {
                 const elId = el.getAttribute('data-country');
-                if (elId !== newValue) {
-                    el.classList.add('hidden');
-                } else if (newValue === '0') {
-                    el.classList.remove('hidden');
-                } else {
-                    el.classList.remove('hidden');
+                if (elId) {
+                    if (elId !== newValue) {
+                        el.classList.add('hidden');
+                    } else if (newValue === '0') {
+                        el.classList.remove('hidden');
+                    } else {
+                        el.classList.remove('hidden');
+                    }
+                }
+                const items = el.querySelectorAll('.table__item');
+                if (items) {
+                    items.forEach(item => {
+                        const itemDate = item.hasAttribute('data-date');
+                        if (itemDate) {
+                            if (this.searchStr) {
+                                if (item.textContent.split(' ')[0].includes(this.searchStr)) {
+                                    el.classList.remove('hidden');
+                                } else {
+                                    el.classList.add('hidden');
+                                }
+                            } else {
+                                if (item.textContent.includes(this.header.getAttribute('data-current-value'))) {
+                                    el.classList.remove('hidden');
+                                } else {
+                                    el.classList.add('hidden');
+                                }
+                            }
+                        }
+                    })
                 }
             })
             this.filteredEls = Array.from(this.elements).filter(el => !el.classList.contains('hidden'))
         }
-        
-        console.log(this.filteredEls)
     }
     
     search = () => {

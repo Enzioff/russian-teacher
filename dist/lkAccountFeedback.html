@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-<link href="css/main.30a4.css" rel="stylesheet"></head>
+<link href="css/main.a9c4.css" rel="stylesheet"></head>
 <body>
 <header class="header">
     <div class="container">
@@ -386,116 +386,163 @@
                 </div>
                 <div class="lk-content__body">
                     <div class="lk-content__meta mb-80">
-                        <span class="select select--center select--small" data-select>
-                            <span class="select__header" data-title="ACCOUNT_TYPE">
-                                <span class="select__current">2024</span>
-                                <svg class="select__icon">
-                                    <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                                </svg>
+                        <span class="select select--center select--middle" data-select="" data-select-async>
+                                <span class="select__header" data-title="year" data-current-value="">
+                                    <span class="select__current">Год</span>
+                                    <svg class="select__icon">
+                                        <use
+                                            xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="2020">2020</span>
+                                    <span class="select__item" data-value="2021">2021</span>
+                                    <span class="select__item" data-value="2022">2022</span>
+                                    <span class="select__item" data-value="2023">2023</span>
+                                    <span class="select__item" data-value="2024">2024</span>
+                                </span>
                             </span>
-                            <span class="select__content">
-                                <span class="select__item" data-value="Admin">2024</span>
-                                <span class="select__item" data-value="Moder_1">2023</span>
-                                <span class="select__item" data-value="Moder_2">2022</span>
-                                <span class="select__item" data-value="Moder_3">2021</span>
-                                <span class="select__item" data-value="Psycho">2020</span>
+                        <span class="select select--center select--middle" data-select="" data-select-async>
+                                <span class="select__header" data-title="month" data-current-value="">
+                                    <span class="select__current">Месяц</span>
+                                    <svg class="select__icon">
+                                        <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="select__content">
+                                    <span class="select__item" data-value="01">Январь</span>
+                                    <span class="select__item" data-value="02">Февраль</span>
+                                    <span class="select__item" data-value="03">Март</span>
+                                    <span class="select__item" data-value="04">Апрель</span>
+                                    <span class="select__item" data-value="05">Май</span>
+                                    <span class="select__item" data-value="06">Июнь</span>
+                                    <span class="select__item" data-value="07">Июль</span>
+                                    <span class="select__item" data-value="08">Август</span>
+                                    <span class="select__item" data-value="09">Сентябрь</span>
+                                    <span class="select__item" data-value="10">Октябрь</span>
+                                    <span class="select__item" data-value="11">Ноябрь</span>
+                                    <span class="select__item" data-value="12">Декабрь</span>
+                                </span>
                             </span>
-                        </span>
-                        <span class="select select--center select--middle" data-select>
-                            <span class="select__header" data-title="ACCOUNT_TYPE">
-                                <span class="select__current">Июнь</span>
-                                <svg class="select__icon">
-                                    <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                                </svg>
-                            </span>
-                            <span class="select__content">
-                                <span class="select__item" data-value="Admin">Администратор</span>
-                                <span class="select__item" data-value="Moder_1">Модератор Тип: 1</span>
-                                <span class="select__item" data-value="Moder_2">Модератор Тип: 2</span>
-                                <span class="select__item" data-value="Moder_3">Модератор Тип: 3</span>
-                                <span class="select__item" data-value="Psycho">Психолог</span>
-                            </span>
-                        </span>
                         <a href="#" download class="button button--slim">Скачать статистику</a>
                     </div>
                     <div class="lk-content__table">
-                        <table class="table table--between">
+                        <table class="table table--big">
                             <thead class="table__header">
                             <tr class="table__line">
-                                <th class="table__item table__item--head">Преподаватель</th>
+                                <th class="table__item table__item--head">Отправитель</th>
+                                <th class="table__item table__item--head">Получатель</th>
                                 <th class="table__item table__item--head">Тема</th>
                                 <th class="table__item table__item--head">Дата создания</th>
                                 <th class="table__item table__item--head">Статус</th>
                                 <th class="table__item table__item--head">Тип</th>
                                 <th class="table__item table__item--head">Просмотр</th>
-                                <th class="table__item table__item--head"></th>
                             </tr>
                             </thead>
-                            <tbody class="table__body">
+                            <tbody class="table__body" data-async>
                             <tr class="table__line">
-                                <td class="table__item">Иван Петров</td>
-                                <td class="table__item">Не следует, однако забывать</td>
-                                <td class="table__item">03.06.2024</td>
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Помощь</td>
+                                <td class="table__item" data-date="">08.11.2024 15:30</td>
                                 <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
                                 <td class="table__item table__item--bold">Помощь</td>
                                 <td class="table__item table__item--chat">
-                                    <a href="#" class="table__visible" data-visible>
-                                        <svg class="icon icon--blue">
-                                            <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                    <a href="./detail/?id=9&amp;chat_id=165" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
                                         </svg>
                                     </a>
-                                </td>
-                                <td class="table__item">
-                                    <a href="#" class="button button--short button--green">Одобрить</a>
-                                </td>
-                            </tr>
-                            <tr class="table__line table__line--info">
-                                <td class="table__item" colspan="6">
-                                    Информация
                                 </td>
                             </tr>
                             <tr class="table__line">
-                                <td class="table__item">Иван Петров</td>
-                                <td class="table__item">Не следует, однако забывать</td>
-                                <td class="table__item">03.06.2024</td>
-                                <td class="table__item table__item--bold table__item--confirm">Завершено</td>
-                                <td class="table__item table__item--bold">Жалоба</td>
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">тест</td>
+                                <td class="table__item" data-date>08.11.2024 15:39</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
                                 <td class="table__item table__item--chat">
-                                    <a href="#" class="table__visible" data-visible>
-                                        <svg class="icon icon--blue">
-                                            <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                    <a href="./detail/?id=9&amp;chat_id=166" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
                                         </svg>
                                     </a>
-                                </td>
-                                <td class="table__item">
-                                    <a href="#" class="button button--short button--green">Одобрить</a>
-                                </td>
-                            </tr>
-                            <tr class="table__line table__line--info">
-                                <td class="table__item" colspan="6">
-                                    Информация
                                 </td>
                             </tr>
                             <tr class="table__line">
-                                <td class="table__item">Иван Петров</td>
-                                <td class="table__item">Не следует, однако забывать</td>
-                                <td class="table__item">03.06.2024</td>
-                                <td class="table__item table__item--bold table__item--confirm">Завершено</td>
-                                <td class="table__item table__item--bold">Отпуск</td>
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Новое 1111</td>
+                                <td class="table__item" data-date>08.11.2023 15:50</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
                                 <td class="table__item table__item--chat">
-                                    <a href="#" class="table__visible" data-visible>
-                                        <svg class="icon icon--blue">
-                                            <use xlink:href="./assets/sprite.svg#icon-eye"></use>
+                                    <a href="./detail/?id=9&amp;chat_id=167" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
                                         </svg>
                                     </a>
                                 </td>
-                                <td class="table__item">
-                                    <a href="#" class="button button--short button--green">Одобрить</a>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Тест</td>
+                                <td class="table__item" data-date>08.11.2024 15:51</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
+                                <td class="table__item table__item--chat">
+                                    <a href="./detail/?id=9&amp;chat_id=168" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                    </a>
                                 </td>
                             </tr>
-                            <tr class="table__line table__line--info">
-                                <td class="table__item" colspan="6">
-                                    Информация
+                            <tr class="table__line">
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Тест</td>
+                                <td class="table__item" data-date>08.11.2024 16:01</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
+                                <td class="table__item table__item--chat">
+                                    <a href="./detail/?id=9&amp;chat_id=169" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Тестовая рассылка</td>
+                                <td class="table__item" data-date>08.11.2024 16:10</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
+                                <td class="table__item table__item--chat">
+                                    <a href="./detail/?id=9&amp;chat_id=170" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="table__line">
+                                <td class="table__item">Артем Фролов</td>
+                                <td class="table__item">Евгений Кормилицын</td>
+                                <td class="table__item">Test 1111</td>
+                                <td class="table__item" data-date>08.10.2024 16:24</td>
+                                <td class="table__item table__item--bold table__item--wait">Идёт переписка</td>
+                                <td class="table__item table__item--bold">Помощь</td>
+                                <td class="table__item table__item--chat">
+                                    <a href="./detail/?id=9&amp;chat_id=173" class="chat ">
+                                        <svg class="chat__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                    </a>
                                 </td>
                             </tr>
                             </tbody>
@@ -767,5 +814,5 @@
         </div>
     </div>
 </div>
-<script defer src="bundle.ae2c.js"></script></body>
+<script defer src="bundle.2858.js"></script></body>
 </html>

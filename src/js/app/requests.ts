@@ -67,7 +67,7 @@ class Requests {
 
         if (this.selects) {
             this.selects.forEach(select => {
-                const countrySelect = select.querySelector('[data-title="country_id"]')
+                const countrySelect = select.querySelector('[data-title="country_id_hide"]')
 
                 if (countrySelect) {
                     const parentEl = countrySelect.closest('.form__item');
@@ -122,6 +122,22 @@ class Requests {
                 if (data?.success) {
                     if (data?.data) {
                         window.location.replace(`https://${data.data}`);
+                    } else if (data?.links) {
+                        const links = data.links;
+                        const downloadFile = (url: string): void => {
+                            console.log(url)
+                            const a = document.createElement('a');
+                            a.setAttribute('href', url);
+                            a.setAttribute('download', '');
+                            document.body.appendChild(a);
+                            a.click();
+                            console.log(a)
+                            document.body.removeChild(a);
+                        }
+                        
+                        links.forEach((link: string) => {
+                            downloadFile(window.location.origin + link);
+                        })
                     } else {
                         window.location.reload()
                     }
@@ -148,12 +164,16 @@ class Requests {
 
         const showError = (parentElement: HTMLElement) => {
             let timeout: ReturnType<typeof setTimeout> | null = null;
-            parentElement.classList.add('error')
+            if (parentElement) {
+                parentElement.classList.add('error')
+            }
 
             clearTimeout(timeout)
 
             timeout = setTimeout(() => {
-                parentElement.classList.remove('error')
+                if (parentElement) {
+                    parentElement.classList.remove('error')
+                }
             }, 2000)
         }
 
@@ -186,7 +206,7 @@ class Requests {
         this.selects.forEach(select => {
             const parentNode = select.closest('.form__item') as HTMLElement;
             const selectHeader = select.querySelector('.select__header');
-            const countrySelect = select.querySelector('[data-title="country_id"]')
+            const countrySelect = select.querySelector('[data-title="country_id_hide"]')
 
             const currentSelect = selectHeader.getAttribute('data-current-value');
 
@@ -242,6 +262,7 @@ class Requests {
                     break;
                 case 'file':
                     input = input as HTMLInputElement;
+                    console.log(input.files)
                     if (input.files.length > 1) {
                         // @ts-ignore
                         data.append(input.name, [...input.files]);

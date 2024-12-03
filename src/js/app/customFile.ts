@@ -20,7 +20,7 @@ class customFile {
             const target = evt.target as HTMLInputElement;
 
             const file = target.files
-
+            
             if (this.uploadList) {
                 Array.from(file).forEach(el => {
                     console.log(el)
@@ -44,15 +44,16 @@ class customFile {
     }
 
     addFiles = (newFiles: FileList) =>{
-        const existingFiles = this.uploadInput.files;
 
-        const allFiles = existingFiles ? Array.from(existingFiles) : [];
+        const allFiles = [];
 
         for (let i = 0; i < newFiles.length; i++) {
             allFiles.push(newFiles[i]);
         }
-
+        
         const dataTransfer = new DataTransfer();
+        
+        console.log(allFiles)
 
         allFiles.forEach(file => dataTransfer.items.add(file));
 

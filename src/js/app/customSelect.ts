@@ -30,7 +30,7 @@ class CustomSelect {
                     this.input.value = el.getAttribute('data-value');
                 }
 
-                const countrySelect = document.querySelector('[data-title="country_id"]')
+                const countrySelect = document.querySelector('[data-title="country_id_hide"]')
 
                 if (countrySelect) {
                     const parentEl: HTMLElement = countrySelect.closest('.form__item');

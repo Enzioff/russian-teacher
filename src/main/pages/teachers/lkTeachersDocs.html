@@ -65,19 +65,24 @@
                                 <td class="table__item">I полугодие 2024</td>
                                 <td class="table__item">03.06.2024</td>
                                 <td class="table__item">
-                                    <span class="select select--middle" data-select="">
-                                        <span class="select__header">
-                                            <span class="select__current">Рассматривается</span>
-                                            <svg class="select__icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-arrow"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="select__content">
-                                            <span class="select__item select__item--wait" data-value="2020">Рассматривается</span>
-                                            <span class="select__item select__item--rejected" data-value="2021">Отклонён</span>
-                                            <span class="select__item select__item--approved" data-value="2022">Принят</span>
-                                        </span>
+                                    <form action="/local/ajax/actions_core.php" method="POST" class="change-status-form" data-form-async="">
+                                        <input type="hidden" name="action" value="change_document_status">
+                                        <input type="hidden" name="document_id" value="83">
+                                        <input type="hidden" name="new_status_id" value="22">
+                                        <span class="select select--middle" data-select="">
+                                    <span class="select__header" data-current-value="23">
+                                        <span class="select__current">Отклонён</span>
+                                        <svg class="select__icon">
+                                            <use xlink:href="/local/templates/russian-teacher.dnt-digital.ru/assets/sprite.svg#icon-arrow"></use>
+                                        </svg>
                                     </span>
+                                    <span class="select__content">
+                                        <span class="select__item select__item--wait" data-value="22">Рассматривается</span>
+                                        <span class="select__item select__item--rejected" data-value="23">Отклонён</span>
+                                        <span class="select__item select__item--approved" data-value="24">Принят</span>
+                                    </span>
+                                </span>
+                                    </form>
                                 </td>
                                 <td class="table__item">
                                     <a href="#" class="button button--short">Скачать</a>
