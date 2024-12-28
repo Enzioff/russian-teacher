@@ -52,7 +52,13 @@ class AsyncForm {
         const formData = new FormData();
         
         this.inputs.forEach((input) => {
-            formData.append(input.name, input.value);
+            if (input.type === 'file') {
+                if ("files" in input) {
+                    formData.append(input.name, input.files[0]);
+                }
+            } else {
+                formData.append(input.name, input.value);
+            }
         })
         
         if (data) {

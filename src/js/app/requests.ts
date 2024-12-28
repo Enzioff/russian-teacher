@@ -17,7 +17,7 @@ class Requests {
 
     constructor(form: HTMLFormElement) {
         this.form = form;
-        this.api = 'https://russian-teacher-dev3.dnt-digital.ru/local/ajax/actions_core.php';
+        this.api = '/local/ajax/actions_core.php';
         this.inputs = this.getTotalInputs();
         this.buttons = this.form.querySelectorAll('button');
         this.selects = this.form.querySelectorAll('[data-select]');
